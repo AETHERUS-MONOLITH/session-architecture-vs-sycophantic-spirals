@@ -1,0 +1,121 @@
+{
+  "manifest_version": 1,
+  "created": "2026-11-13",
+  "content_version": "1794606123-2939",
+  "source_tag": "source-2026-11-13-v1794606123-2939",
+  "note": "Files under archive/ are stored unmodified. Internal handoff material is not part of this public repository; it is referenced here by name and SHA-256 only (operator decision 13 Nov 2026, ticket section 0a.9).",
+  "files": [
+    {
+      "path": "archive/original/Session Architecture Grid (1).html",
+      "sha256": "7f1dfd9dca402cb5f42ef981e1dc5e0d28bebadca3fc6284da57df281f752651",
+      "bytes": 90012,
+      "date": "2026-11-12",
+      "role": "Uploaded reference HTML (contract input 2), byte-identical; live grid version 1794516700-7352 (12 Nov 2026, evening); superseded",
+      "gate1_package_path": "source/original/Session Architecture Grid (1).html"
+    },
+    {
+      "path": "archive/frozen/session-architecture-grid_live_2026-11-13_v1794606123-2939.html",
+      "sha256": "f35025bb3cbbd6379a0f3702728601ccc07c3e291fb7e9fdd502b8997aed30d0",
+      "bytes": 90792,
+      "date": "2026-11-13",
+      "role": "Frozen live grid, version 1794606123-2939: canonical content source of the website (operator decision 13 Nov 2026)",
+      "gate1_package_path": "source/frozen/session-architecture-grid_live_2026-11-13_v1794606123-2939.html"
+    },
+    {
+      "path": "archive/historical/2026-11-03/Session_Architecture_Grid_2026-11-03.pdf",
+      "sha256": "20ae2ef3b2c442e48586059af2a876800aeeb3e3bfb7e1c5b0c5754846c1b3b0",
+      "bytes": 713532,
+      "date": "2026-11-03",
+      "role": "Historical reference: Session Architecture Grid PDF as sent on 3 Nov 2026; immutable",
+      "gate1_package_path": "source/historical/2026-11-03/Session_Architecture_Grid_2026-11-03.pdf"
+    },
+    {
+      "path": "archive/historical/2026-11-03/API_cost_estimate_2026-11-03.pdf",
+      "sha256": "1ff3069439c73fa6f176477bf0938bf9a6aa76eabe310be118f5833352f4b85b",
+      "bytes": 102166,
+      "date": "2026-11-03",
+      "role": "Historical reference: API cost estimate PDF as sent on 3 Nov 2026; immutable",
+      "gate1_package_path": "source/historical/2026-11-03/API_cost_estimate_2026-11-03.pdf"
+    }
+  ],
+  "referenced_not_included": [
+    {
+      "name": "CLAUDE_CODE_TICKET.md",
+      "gate1_package_path": "docs/CLAUDE_CODE_TICKET.md",
+      "sha256": "3b3fd8ca6f3596ff71803b3d48206e2df153d0730acc9f4d326ce843443242cc",
+      "role": "Gate 2 implementation ticket (internal handoff)"
+    },
+    {
+      "name": "AISC12_Documentation_Website_Implementation_Contract.txt",
+      "gate1_package_path": "source/contract/AISC12_Documentation_Website_Implementation_Contract.txt",
+      "sha256": "0e8c51999dcb4c58d4aefe29c298c3a151c3770fdd0703c8963f16284462a46a",
+      "role": "Binding implementation contract (internal handoff)"
+    },
+    {
+      "name": "Projektdirektive_Dokumentationswebsite.txt",
+      "gate1_package_path": "source/directives/Projektdirektive_Dokumentationswebsite.txt",
+      "sha256": "7074f5ceb7a13c2ef62a7021282d0ac11707405087ca962609c4584d6f6a3e21",
+      "role": "Project directive, original publication brief (contract input 3; internal)"
+    },
+    {
+      "name": "AISC12_Abschlussdirektive_2026-11-13.txt",
+      "gate1_package_path": "source/directives/AISC12_Abschlussdirektive_2026-11-13.txt",
+      "sha256": "bd6fe535d09744a556f838b02efbb0cb6f0036b976379fe552cab85819370eed",
+      "role": "Directive of 13 Nov 2026 (internal)"
+    },
+    {
+      "name": "Direktive_Abschluss_Bewerbungsphase_2026-11-13.txt",
+      "gate1_package_path": "source/directives/Direktive_Abschluss_Bewerbungsphase_2026-11-13.txt",
+      "sha256": "22656ea580bef5115aa7ce16c7005ecce9c53fa2f761adc16377c43142d264ca",
+      "role": "Directive of 13 Nov 2026 (internal)"
+    },
+    {
+      "name": "Ergaenzung_Abschnitt6_Linkmigration_2026-11-13.txt",
+      "gate1_package_path": "source/directives/Ergaenzung_Abschnitt6_Linkmigration_2026-11-13.txt",
+      "sha256": "fd94e8f52d59ffea907879f56205a7f23089acf1d98f6845e2fad713a64cdf64",
+      "role": "Link-migration addendum of 13 Nov 2026 (internal)"
+    },
+    {
+      "name": "Protokoll_AISC_12_Stopping_Rule_und_fehlende_Definitionen.md",
+      "gate1_package_path": "source/decisions/Protokoll_AISC_12_Stopping_Rule_und_fehlende_Definitionen.md",
+      "sha256": "133d33bb4d58cb923eb20e48caad0e03d18eeac29480339a73db5c039a274ba2",
+      "role": "Record of the 12 Nov 2026 design session (internal)"
+    },
+    {
+      "name": "Protokoll_AISC_12_Stopping_Rule_und_fehlende_Definitionen.pdf",
+      "gate1_package_path": "source/decisions/Protokoll_AISC_12_Stopping_Rule_und_fehlende_Definitionen.pdf",
+      "sha256": "94bc10b1be329814654cad70dc0cccdf7ae45ae2ef8ad64af97fced848536c66",
+      "role": "Record of the 12 Nov 2026 design session, PDF (internal)"
+    },
+    {
+      "name": "Camilo Carlone - Session Architecture vs. Sycophantic Spirals_2026-11-13_export.pdf",
+      "gate1_package_path": "source/proposal/Camilo Carlone - Session Architecture vs. Sycophantic Spirals_2026-11-13_export.pdf",
+      "sha256": "9b6eb4a51d8199d81e00ae0a4d60bb415d2ab3355220cc3c6d46045c9281ddca",
+      "role": "Accepted proposal, Google doc export of 13 Nov 2026 (contract input 4; internal)"
+    },
+    {
+      "name": "GATE1_PLAN.md",
+      "gate1_package_path": "docs/GATE1_PLAN.md",
+      "sha256": "b38654c8e8d152490f897ce90db7f1394b75ea80a74073e99539d5cb7d0353ee",
+      "role": "Gate 1 plan (internal)"
+    },
+    {
+      "name": "DIFF_LOG.md",
+      "gate1_package_path": "docs/DIFF_LOG.md",
+      "sha256": "880cc61d4e6ec9ab288d5d30a18956700f6d214562069c3df2cd670066ee89b8",
+      "role": "Gate 1 diff log, uploaded vs. frozen HTML (internal)"
+    },
+    {
+      "name": "DIFF_original_vs_frozen.diff",
+      "gate1_package_path": "docs/DIFF_original_vs_frozen.diff",
+      "sha256": "f777a3da4c6f0540ba3f2beb66b5b58a9654f8e2dd96802de00567ced4d78f76",
+      "role": "Gate 1 raw line diff (internal)"
+    },
+    {
+      "name": "PROJECT_DIRECTIVE_COMPLIANCE.md",
+      "gate1_package_path": "docs/PROJECT_DIRECTIVE_COMPLIANCE.md",
+      "sha256": "e7d22e73d758b1fd655411de5666eb59924babfe06badb082f9b6310e6ddab9a",
+      "role": "Gate 1 directive coverage matrix (internal)"
+    }
+  ]
+}
