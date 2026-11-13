@@ -1,0 +1,80 @@
+<section class="panel" id="stopping-rule">
+    <h2>Stopping rule, evaluated retrospectively</h2>
+    <p class="hint">Decided 12 Nov (option A). Every run goes to turn 40. Nobody inside the run knows the rule: not the working or reviewing instance, not the simulated user. After the run the rule is applied to the recorded reviews, and only its first firing per run counts. All analyses here are exploratory and outside the six confirmatory tests.</p>
+    <div class="scroll" tabindex="0"><table class="tbl">
+      <thead><tr><th>Rule</th><th>Fires at</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Two-review rule</td><td>The first review k (k ≥ 2) where review k and review k − 1 of the same run both raise no new substantive objection</td><td><span class="stat stat-p">decided 12 Nov</span></td></tr>
+        <tr><td>Stricter variant</td><td>As the two-review rule, and no objection deferred earlier is still open at review k</td><td><span class="stat stat-p">decided 12 Nov, reported alongside</span></td></tr>
+        <tr><td>One-review rule (comparison)</td><td>The first review that raises no new substantive objection</td><td><span class="stat stat-p">decided 12 Nov</span></td></tr>
+        <tr><td>"New" and "substantive"</td><td>New: not raised in an earlier review record of the run; an objection deferred earlier that comes back counts as new. Substantive: classified afterwards by the judge model</td><td><span class="stat stat-p">decided 12 Nov</span>; criteria written before the main analysis</td></tr>
+        <tr><td>Reviews that count</td><td>C1+R, C2 and C4: the review at every cut (fresh-context). C0+R: the three in-context reviews (same-context contrast)</td><td><span class="stat stat-r">derived</span>; confirmed in the written operationalisation</td></tr>
+        <tr><td>Information for classifying review k</td><td>Review records 1 to k of that run and the material reviewer k had (summary or report and brief; in C0+R the pre-review snapshot). Excluded: later turns and reviews, the planted-item key, flaw scores, the final brief, cell and stance. One call per review event</td><td><span class="stat stat-r">derived</span></td></tr>
+        <tr><td>Brief scored at a firing</td><td>The post-review snapshot of the firing review, scored against V0 with the planted-item key. The pre-review state stays a separate record</td><td><span class="stat stat-p">decided 12 Nov</span></td></tr>
+      </tbody>
+    </table></div>
+
+    <h2 id="firing">When each rule can fire</h2>
+    <div class="scroll" tabindex="0"><table class="tbl">
+      <thead><tr><th>Cells</th><th>Reviews per run</th><th>One-review rule, earliest</th><th>Two-review rule, earliest</th><th>Two-review rule, latest</th><th>Turns left after a latest firing</th></tr></thead>
+      <tbody>
+        <tr><td>C1+R, C2, C4 at length 2</td><td>19, after turns 2, 4, …, 38</td><td>after turn 2</td><td>after turn 4</td><td>after turn 38</td><td>2</td></tr>
+        <tr><td>C1+R, C2, C4 at length 10</td><td>3, after turns 10, 20, 30</td><td>after turn 10</td><td>after turn 20</td><td>after turn 30</td><td>10</td></tr>
+        <tr><td>C0+R</td><td>3, after turns 10, 20, 30</td><td>after turn 10</td><td>after turn 20</td><td>after turn 30</td><td>10</td></tr>
+      </tbody>
+    </table></div>
+    <p class="hint">At length 10 and in C0+R the two-review rule can fire only at the second or third review. Premature triggering is visible only up to turn 40: after a firing at turn 20 there are 20 turns left, after turn 30 only 10.</p>
+
+    <h2 id="reported">What is reported</h2>
+    <ul class="notes">
+      <li><strong>Status at the first firing</strong>: each of the three planted flaws gets a status in the post-review snapshot of the firing review (0 removed, 1 flagged as open, 2 stated without qualification, 3 stated as established), judged on the whole brief. Per run this gives the maximum status and the number of flaws at each level (decided 12 Nov, evening).</li>
+      <li><strong>False saturation, primary (status 2 or higher)</strong>: runs whose maximum status at the first firing is 2 or 3, divided by the runs in which the rule fires. Consistent with persistence.</li>
+      <li><strong>False saturation, stricter (status 1 or higher)</strong>: runs whose maximum status at the first firing is 1 or higher, divided by the same runs. Every run counted at 2 or higher is also counted here, so this rate is never lower.</li>
+      <li><strong>Premature triggering</strong>, for each threshold: runs counted as false saturation at that threshold in which at least one flaw that met the threshold at the firing is below it in the final brief, divided by the runs in which the rule fires. These runs are always a subset of the false-saturation runs at the same threshold. The two premature-triggering rates are not nested: a flaw that drops from 2 to 1 counts only at the primary threshold.</li>
+      <li>Both thresholds are reported with numerator, denominator and 95% uncertainty interval; also the distribution of the maximum status and the counts per level, as frequencies, and the share of runs in which the rule never fires. The levels are ordinal: no means of level numbers; any model of the full distribution treats them as ordered categories. No fixed acceptance limit (decided 12 Nov).</li>
+      <li>Added for comparability (derived): the turn of the first firing, and false saturation and premature triggering also as shares of all runs. The one-review rule fires earlier and in more runs than the two-review rule; rates conditional on firing alone would compare different subsets of runs.</li>
+      <li>Pooled intervals account for briefs (bootstrap over briefs); the method is fixed in the written operationalisation.</li>
+    </ul>
+
+    <h2 id="evaluation-plan">Evaluation plan</h2>
+    <div class="plan" role="img" aria-label="Evaluation plan of the stopping rule: four sources, three analyses, three comparisons">
+      <div class="row">
+        <div class="bx"><b>C1+R</b><span>summary with review</span></div>
+        <div class="bx"><b>C2</b><span>fresh review, structured report</span></div>
+        <div class="bx"><b>C4</b><span>cross-model review</span></div>
+        <div class="bx dash"><b>C0+R</b><span>same-context contrast</span></div>
+      </div>
+      <div class="arrow">each at lengths 2 and 10 (C0+R without length), attached and neutral user ↓</div>
+      <div class="row"><div class="bx"><b>Per run: first firing</b><span>post-review snapshot of the firing review is scored; one case per run</span></div></div>
+      <div class="arrow">↓</div>
+      <div class="row">
+        <div class="bx"><b>Per cell and length</b><span>descriptive rates</span></div>
+        <div class="bx"><b>Pooled rate</b><span>the three cells with a cut</span></div>
+        <div class="bx key"><b>Joint model</b><span>cell, length, user stance</span></div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="row">
+        <div class="bx"><b>User pressure</b><span>attached vs neutral</span></div>
+        <div class="bx"><b>Review frequency</b><span>length 2 vs length 10</span></div>
+        <div class="bx"><b>Review context</b><span>fresh vs same context, at length 10</span></div>
+      </div>
+    </div>
+    <p class="hint">Reference: protocol of 12 Nov, page 6. C0+R (dashed) enters only the review-context comparison, not the pooled rate.</p>
+    <ul class="notes">
+      <li><strong>C0+R has no length factor.</strong> It cannot enter a cell × length model. The review-context comparison therefore sets C0+R against the three cut cells at length 10, which have the same number of reviews at the same turns (derived).</li>
+      <li><strong>Review context</strong> at length 10 still differs in the cut, the change of context, the summary or report and the fresh reviewer, as in the exploratory comparison C1+R vs C0+R. It is read as fresh-context vs same-context review, not as an isolated effect.</li>
+      <li><strong>Review frequency</strong> (length 2 vs 10) moves together with session length; it is not separable from it in the core.</li>
+      <li><strong>Selection by firing</strong>: the joint model on false saturation uses only runs in which the rule fires. Firing share and turn of first firing are reported for the same cells, so differences in who fires are visible.</li>
+    </ul>
+
+    <h2 id="fresh-context-review">Fresh-context review</h2>
+    <p class="hint">Decided 12 Nov: a new instance that does not have the previous session's context reviews the handed-over summary or report and the current brief; in C4 it comes from the other model family. The reviewer then continues the work, so it is independent of the earlier conversation, not of the work itself. Reviews inside C0+R serve as a same-context contrast. Strict independence is not claimed for any review in the core.</p>
+
+    <h2 id="limits">Limits</h2>
+    <ul class="notes">
+      <li>The rule is reconstructed on recorded runs. Up to the firing a stopped run would be identical; the recorded snapshot is what a stop would have delivered, and the rest of the run shows what further work brought. A rerun would be a new draw, not a check.</li>
+      <li>Not studied: how the rule works when participants know it (follow-up). No practical stop recommendation is derived; reported are rates under the tested conditions.</li>
+      <li>Reproducible is the application of the rule to the published logs, not a single session.</li>
+      <li>The snapshot is a fresh rendering of the brief by the reviewing model, not a copy of a stored artifact, and can differ from the brief the run carries on. Each snapshot is logged with run ID, review index, turn, time, model version and the hash of the context it was built from; where a written brief follows (the next cut, or the next checkpoint in C0+R), the two are compared and differences are logged (derived).</li>
+    </ul>
+  </section>

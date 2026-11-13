@@ -1,0 +1,18 @@
+---
+// The complete grid on one page: S00-S14 and the footer reference in the original order and grouping,
+// interactive. Successor of the artifact link in the project document (link L1).
+import Base from '../../layouts/Base.astro';
+import Frag from '../../components/Frag.astro';
+import GridScript from '../../components/GridScript.astro';
+const SECTIONS = ['S03', 'S04', 'S05', 'S06', 'S07', 'S08', 'S09', 'S10', 'S11', 'S12', 'S13', 'S14'];
+---
+<Base path="/full/" heading={false}>
+  <Frag name="S00" mode="full" />
+  <div class="main">
+    <Frag name="S01" mode="full" />
+    <Frag name="S02" mode="full" />
+  </div>
+  {SECTIONS.map((s) => <Frag name={s} mode="full" />)}
+  <Frag name="F01" mode="full" />
+  <GridScript />
+</Base>

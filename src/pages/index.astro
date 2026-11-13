@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import Frag from '../components/Frag.astro';
+import { chrome } from '../lib/content';
+import { url } from '../lib/url';
+const full = chrome.secondary_routes[0];
+---
+<Base path="/" heading={false}>
+  <Frag name="S00" mode="topic" />
+  <nav class="panel contents" aria-labelledby="contents-heading">
+    <h2 id="contents-heading">{chrome.overview.contents_heading}</h2>
+    <ul class="contents-list">
+      {chrome.routes.filter((r) => r.path !== '/').map((r) => (
+        <li><a href={url(r.path)}>{r.title}</a></li>
+      ))}
+    </ul>
+    <p class="hint"><span>{chrome.overview.full_view_note}</span> <a href={url(full.path)}>{full.title}</a></p>
+  </nav>
+  <Frag name="S14" mode="topic" />
+  <Frag name="F01" mode="topic" />
+</Base>

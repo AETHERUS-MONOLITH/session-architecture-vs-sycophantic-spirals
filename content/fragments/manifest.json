@@ -1,0 +1,599 @@
+{
+  "source": "archive/frozen/session-architecture-grid_live_2026-11-13_v1794606123-2939.html",
+  "source_sha256": "f35025bb3cbbd6379a0f3702728601ccc07c3e291fb7e9fdd502b8997aed30d0",
+  "generated_by": "tools/extract-fragments.mjs",
+  "fragments": {
+    "S05-status-legend": {
+      "file": "content/fragments/S05-status-legend.html",
+      "sha256": "926d6226b560890835b5d27d01caabd5f58034d1dbe60d702693003b091ab1fc"
+    },
+    "S05-status": {
+      "file": "content/fragments/S05-status.html",
+      "sha256": "10ded9459227400ca34edc9535cde63322b48cd1533fd180f1dc4e008a69671f"
+    },
+    "S00": {
+      "file": "content/fragments/S00.html",
+      "sha256": "e3e080e6c10a45f056c05a43712ac6398196e4cd85373c4c6fc05c76cae4ddd3"
+    },
+    "S01": {
+      "file": "content/fragments/S01.html",
+      "sha256": "560a993906d40fd88931a42cf49b90c98c1ba5b145807d396c9ff2c18169539e"
+    },
+    "S02": {
+      "file": "content/fragments/S02.html",
+      "sha256": "08595959f7779ea16164dc9fd19e44028362e25daa5e14771cc204c5a42b3c0a"
+    },
+    "S03": {
+      "file": "content/fragments/S03.html",
+      "sha256": "d78f86610913a2ff5704884d822b0e72a67f02273d5ef86c559d89c05c8e88fb"
+    },
+    "S04": {
+      "file": "content/fragments/S04.html",
+      "sha256": "3e8f0b660cc6cb9e02a38033f7454a4c42375d82729e88fc8ddff5254cc606d0"
+    },
+    "S05": {
+      "file": "content/fragments/S05.html",
+      "sha256": "43b2cb2e8618cbd29dfb635b1d62c367b9e67089cc2a64951ef3b119dbb2fcfb"
+    },
+    "S06": {
+      "file": "content/fragments/S06.html",
+      "sha256": "6df57a84cc7393063947e98cc3860faa6a5e90806d29e71885c7d06193941b44"
+    },
+    "S07": {
+      "file": "content/fragments/S07.html",
+      "sha256": "8bead106d8c48d3312b002b40d0c627cfc3c6f32207232159b55be2d66e75ac0"
+    },
+    "S08": {
+      "file": "content/fragments/S08.html",
+      "sha256": "54559097ed1547d8fcca609abbede5a9212d5b2db5b4ca63978f2911590e1dd7"
+    },
+    "S09": {
+      "file": "content/fragments/S09.html",
+      "sha256": "6953e40d7e83c0e51f967da97c3c068ccaeae43ad58cee1b7c411a7621075f8f"
+    },
+    "S10": {
+      "file": "content/fragments/S10.html",
+      "sha256": "97617fb72b5f2f56cbedab2b6e0a740ea418a9db1c56986108bd8ea6484180a5"
+    },
+    "S11": {
+      "file": "content/fragments/S11.html",
+      "sha256": "6d31bb09d803722716715e227f0a076c635a3b936809e95f7d616ffe07bcb80d"
+    },
+    "S12": {
+      "file": "content/fragments/S12.html",
+      "sha256": "ff70abbc7fe73adc1887ba1ec04f39f6f4ec7573b9377c81aa754ff72a65e57e"
+    },
+    "S13": {
+      "file": "content/fragments/S13.html",
+      "sha256": "d1089578fd28218692ba8a2682d3268450aa81c019600e128d4e827b72d0ecf1"
+    },
+    "S14": {
+      "file": "content/fragments/S14.html",
+      "sha256": "8c953a51b3083f1a29498db4410ee8ff7137457db98772a875f8a3316abb083f"
+    },
+    "F01": {
+      "file": "content/fragments/F01.html",
+      "sha256": "5ec170294e8f144fafbce62006c45387d5701b6587c26978216f198491027c31"
+    }
+  },
+  "attribute_additions": [
+    {
+      "selector": "header#top",
+      "attribute": "id",
+      "before": null,
+      "after": "top",
+      "why": "anchor for S00 (mapping)"
+    },
+    {
+      "selector": "p#reference-model.foot",
+      "attribute": "id",
+      "before": null,
+      "after": "reference-model",
+      "why": "anchor for F01 (content/inventory-addendum.json)"
+    },
+    {
+      "selector": "section#grid.panel",
+      "attribute": "id",
+      "before": null,
+      "after": "grid",
+      "why": "anchor for S01 (mapping)"
+    },
+    {
+      "selector": "section#conditions.panel",
+      "attribute": "id",
+      "before": null,
+      "after": "conditions",
+      "why": "anchor for S02 (mapping)"
+    },
+    {
+      "selector": "section#hypotheses.panel",
+      "attribute": "id",
+      "before": null,
+      "after": "hypotheses",
+      "why": "anchor for S04 (mapping)"
+    },
+    {
+      "selector": "section#handoff.panel",
+      "attribute": "id",
+      "before": null,
+      "after": "handoff",
+      "why": "anchor for S05 (mapping)"
+    },
+    {
+      "selector": "section#artifacts.panel",
+      "attribute": "id",
+      "before": null,
+      "after": "artifacts",
+      "why": "anchor for S10 (mapping)"
+    },
+    {
+      "selector": "section#instance-state.panel",
+      "attribute": "id",
+      "before": null,
+      "after": "instance-state",
+      "why": "anchor for S11 (mapping)"
+    },
+    {
+      "selector": "section#error-path.panel",
+      "attribute": "id",
+      "before": null,
+      "after": "error-path",
+      "why": "anchor for S12 (mapping)"
+    },
+    {
+      "selector": "section#tasks-outcomes.panel.strip",
+      "attribute": "id",
+      "before": null,
+      "after": "tasks-outcomes",
+      "why": "anchor for S14 (mapping)"
+    },
+    {
+      "selector": "li#h1",
+      "attribute": "id",
+      "before": null,
+      "after": "h1",
+      "why": "anchor per hypothesis item (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "li#h2",
+      "attribute": "id",
+      "before": null,
+      "after": "h2",
+      "why": "anchor per hypothesis item (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "li#h3",
+      "attribute": "id",
+      "before": null,
+      "after": "h3",
+      "why": "anchor per hypothesis item (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "li#h5",
+      "attribute": "id",
+      "before": null,
+      "after": "h5",
+      "why": "anchor per hypothesis item (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "li#h4",
+      "attribute": "id",
+      "before": null,
+      "after": "h4",
+      "why": "anchor per hypothesis item (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "li#k1",
+      "attribute": "id",
+      "before": null,
+      "after": "k1",
+      "why": "anchor per hypothesis item (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "li#k2",
+      "attribute": "id",
+      "before": null,
+      "after": "k2",
+      "why": "anchor per hypothesis item (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "li#c2-c1",
+      "attribute": "id",
+      "before": null,
+      "after": "c2-c1",
+      "why": "anchor per hypothesis item (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "li#ref",
+      "attribute": "id",
+      "before": null,
+      "after": "ref",
+      "why": "anchor per hypothesis item (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "li#test",
+      "attribute": "id",
+      "before": null,
+      "after": "test",
+      "why": "anchor per hypothesis item (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "h2#firing",
+      "attribute": "id",
+      "before": null,
+      "after": "firing",
+      "why": "subsection anchor (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "h2#reported",
+      "attribute": "id",
+      "before": null,
+      "after": "reported",
+      "why": "subsection anchor (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "h2#evaluation-plan",
+      "attribute": "id",
+      "before": null,
+      "after": "evaluation-plan",
+      "why": "subsection anchor (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "h2#fresh-context-review",
+      "attribute": "id",
+      "before": null,
+      "after": "fresh-context-review",
+      "why": "subsection anchor (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "h2#limits",
+      "attribute": "id",
+      "before": null,
+      "after": "limits",
+      "why": "subsection anchor (GATE1_PLAN section 2)"
+    },
+    {
+      "selector": "div.grid",
+      "attribute": "role",
+      "before": "table",
+      "after": "group",
+      "why": "role=\"table\" without row/cell roles is invalid ARIA; aria-label kept"
+    },
+    {
+      "selector": "div#col-2.axis",
+      "attribute": "id",
+      "before": null,
+      "after": "col-2",
+      "why": "column label id for aria-labelledby"
+    },
+    {
+      "selector": "div#col-5.axis",
+      "attribute": "id",
+      "before": null,
+      "after": "col-5",
+      "why": "column label id for aria-labelledby"
+    },
+    {
+      "selector": "div#col-10.axis",
+      "attribute": "id",
+      "before": null,
+      "after": "col-10",
+      "why": "column label id for aria-labelledby"
+    },
+    {
+      "selector": "div#col-20.axis",
+      "attribute": "id",
+      "before": null,
+      "after": "col-20",
+      "why": "column label id for aria-labelledby"
+    },
+    {
+      "selector": "div#row-C0.rowlab",
+      "attribute": "id",
+      "before": null,
+      "after": "row-C0",
+      "why": "row label id for aria-labelledby"
+    },
+    {
+      "selector": "div#row-C0R.rowlab",
+      "attribute": "id",
+      "before": null,
+      "after": "row-C0R",
+      "why": "row label id for aria-labelledby"
+    },
+    {
+      "selector": "div#row-C1.rowlab",
+      "attribute": "id",
+      "before": null,
+      "after": "row-C1",
+      "why": "row label id for aria-labelledby"
+    },
+    {
+      "selector": "div#row-C1R.rowlab",
+      "attribute": "id",
+      "before": null,
+      "after": "row-C1R",
+      "why": "row label id for aria-labelledby"
+    },
+    {
+      "selector": "div#row-C2.rowlab",
+      "attribute": "id",
+      "before": null,
+      "after": "row-C2",
+      "why": "row label id for aria-labelledby"
+    },
+    {
+      "selector": "div#row-C2X.rowlab",
+      "attribute": "id",
+      "before": null,
+      "after": "row-C2X",
+      "why": "row label id for aria-labelledby"
+    },
+    {
+      "selector": "div#row-C3.rowlab",
+      "attribute": "id",
+      "before": null,
+      "after": "row-C3",
+      "why": "row label id for aria-labelledby"
+    },
+    {
+      "selector": "div#row-C4.rowlab",
+      "attribute": "id",
+      "before": null,
+      "after": "row-C4",
+      "why": "row label id for aria-labelledby"
+    },
+    {
+      "selector": "button#g-C0.cell.core.span4",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C0 g-C0",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C0R.cell.core.span4",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C0R g-C0R",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C1-2.cell.core",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C1 col-2 g-C1-2",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C1-5.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C1 col-5 g-C1-5",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C1-10.cell.core",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C1 col-10 g-C1-10",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C1-20.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C1 col-20 g-C1-20",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C1R-2.cell.core",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C1R col-2 g-C1R-2",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C1R-5.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C1R col-5 g-C1R-5",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C1R-10.cell.core",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C1R col-10 g-C1R-10",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C1R-20.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C1R col-20 g-C1R-20",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C2-2.cell.core",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C2 col-2 g-C2-2",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C2-5.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C2 col-5 g-C2-5",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C2-10.cell.core",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C2 col-10 g-C2-10",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C2-20.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C2 col-20 g-C2-20",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C2X-2.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C2X col-2 g-C2X-2",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C2X-5.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C2X col-5 g-C2X-5",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C2X-10.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C2X col-10 g-C2X-10",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C2X-20.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C2X col-20 g-C2X-20",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C3-2.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C3 col-2 g-C3-2",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C3-5.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C3 col-5 g-C3-5",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C3-10.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C3 col-10 g-C3-10",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C3-20.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C3 col-20 g-C3-20",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C4-2.cell.core",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C4 col-2 g-C4-2",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C4-5.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C4 col-5 g-C4-5",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C4-10.cell.core",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C4 col-10 g-C4-10",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "button#g-C4-20.cell.ext",
+      "attribute": "aria-labelledby",
+      "before": null,
+      "after": "row-C4 col-20 g-C4-20",
+      "why": "accessible name = row label + length + cell text (all existing text)"
+    },
+    {
+      "selector": "div.tlwrap",
+      "attribute": "tabindex",
+      "before": null,
+      "after": "0",
+      "why": "keyboard access to a horizontally scrolling region"
+    },
+    {
+      "selector": "div.scroll",
+      "attribute": "tabindex",
+      "before": null,
+      "after": "0",
+      "why": "keyboard access to a horizontally scrolling region"
+    },
+    {
+      "selector": "div.scroll",
+      "attribute": "tabindex",
+      "before": null,
+      "after": "0",
+      "why": "keyboard access to a horizontally scrolling region"
+    },
+    {
+      "selector": "div.scroll",
+      "attribute": "tabindex",
+      "before": null,
+      "after": "0",
+      "why": "keyboard access to a horizontally scrolling region"
+    },
+    {
+      "selector": "div.scroll",
+      "attribute": "tabindex",
+      "before": null,
+      "after": "0",
+      "why": "keyboard access to a horizontally scrolling region"
+    },
+    {
+      "selector": "div.scroll",
+      "attribute": "tabindex",
+      "before": null,
+      "after": "0",
+      "why": "keyboard access to a horizontally scrolling region"
+    },
+    {
+      "selector": "div.scroll",
+      "attribute": "tabindex",
+      "before": null,
+      "after": "0",
+      "why": "keyboard access to a horizontally scrolling region"
+    },
+    {
+      "selector": "div.scroll",
+      "attribute": "tabindex",
+      "before": null,
+      "after": "0",
+      "why": "keyboard access to a horizontally scrolling region"
+    },
+    {
+      "selector": "div.scroll",
+      "attribute": "tabindex",
+      "before": null,
+      "after": "0",
+      "why": "keyboard access to a horizontally scrolling region"
+    },
+    {
+      "selector": "div.scroll",
+      "attribute": "tabindex",
+      "before": null,
+      "after": "0",
+      "why": "keyboard access to a horizontally scrolling region"
+    }
+  ]
+}

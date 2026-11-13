@@ -1,0 +1,72 @@
+# CI: runs on every pull request and on pushes to main and gate branches. Builds with the
+# GitHub Pages project-path base and runs every check of GATE1_PLAN section 7 A-D.
+# It never deploys.
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main, 'gate2/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  SITE_BASE: /session-architecture-vs-sycophantic-spirals/
+  SITE_URL: https://aetherus-monolith.github.io
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r tools/requirements.txt
+      - run: npm ci
+      - name: Install Playwright browsers (Chromium, WebKit)
+        run: npx playwright install --with-deps chromium webkit
+      - name: Source integrity (ticket section 2)
+        run: node tools/check-source.mjs --out evidence-ci
+      - name: Unit tests and golden comparison (B1-B11)
+        run: npx vitest run 2>&1 | tee evidence-ci/unit-tests.txt
+      - name: Build with the project-path base
+        run: npx astro build 2>&1 | tee evidence-ci/build.log
+      - name: Content parity (A1-A6)
+        run: node tools/parity.mjs --self-test --out evidence-ci
+      - name: Parity negative control (mutations must be detected)
+        run: node tools/parity-mutation.mjs
+      - name: Routes, anchors, links, no claude.ai, no external requests (D2-D4)
+        run: node tools/linkcheck.mjs --out evidence-ci
+      - name: Token contrast (WCAG 2.1 AA)
+        run: node tools/contrast.mjs --out evidence-ci
+      - name: Base-path variant (/alt-base/) builds and passes parity and link checks
+        run: |
+          SITE_BASE=/alt-base/ npx astro build --outDir dist-alt
+          SITE_BASE=/alt-base/ node tools/parity.mjs --dist dist-alt --out evidence-ci/alt-base
+          SITE_BASE=/alt-base/ node tools/linkcheck.mjs --dist dist-alt
+      - name: Playwright (C1-C8, D1-D2) on Chromium and WebKit, desktop and mobile
+        run: npx playwright test
+        env:
+          CI: 'true'
+          E2E_JSON: evidence-ci/e2e.json
+      - name: Screenshots (GATE1_PLAN section 7 E)
+        if: always()
+        run: SCREENSHOTS=1 SCREENSHOT_DIR=evidence-ci/screenshots npx playwright test tests/e2e/screenshots.spec.ts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gate-evidence
+          path: |
+            evidence-ci/
+            test-results/
+          retention-days: 30
