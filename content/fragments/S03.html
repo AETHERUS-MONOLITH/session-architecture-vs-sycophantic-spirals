@@ -1,0 +1,27 @@
+<section class="panel" id="runs">
+    <div class="tl-head">
+      <h2>How a run unfolds: work, cut, report, review, resume</h2>
+      <div class="seg" role="group" aria-label="Session length">
+        <button type="button" class="seg-btn" id="len-2" data-n="2" aria-pressed="false">2</button>
+        <button type="button" class="seg-btn" id="len-5" data-n="5" aria-pressed="false">5<small>ext.</small></button>
+        <button type="button" class="seg-btn" id="len-10" data-n="10" aria-pressed="true">10</button>
+        <button type="button" class="seg-btn" id="len-20" data-n="20" aria-pressed="false">20<small>ext.</small></button>
+      </div>
+    </div>
+    <div class="keyrow">
+      <span class="k"><span class="inst"></span>One instance (one context)</span>
+      <span class="k"><span class="b v0" style="width:auto">V0</span>Starting brief with planted items</span>
+      <span class="k"><span class="b work"></span>Work, model family A</span>
+      <span class="k"><span class="b work mb"></span>Work, model family B</span>
+      <span class="k"><span class="b cut"></span>Cut: instance ends, context cleared; label = what is handed over</span>
+      <span class="k"><span class="b sum"></span>Free summary</span>
+      <span class="k"><span class="b rep"></span>Structured report</span>
+      <span class="k"><span class="b rep ind"></span>Report by separate instance</span>
+      <span class="k"><span class="b rev"></span>Review, first task of the next working instance</span>
+      <span class="k"><span class="b snap"></span>Brief recorded right after the review (side call, outside the conversation)</span>
+    </div>
+    <div class="tlwrap" tabindex="0">
+      <div class="lanes" id="lanes"></div>
+    </div>
+    <p class="hint">Same total budget in every lane: <span id="budget-label">40</span> turn pairs (planning value, decided 2 Nov). Work blocks are drawn to scale in turns. Summaries, reports, reviews and post-review snapshots use model calls but are not counted as turns.</p>
+  </section>

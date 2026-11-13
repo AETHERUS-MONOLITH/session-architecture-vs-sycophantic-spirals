@@ -1,0 +1,5364 @@
+{
+  "config": {
+    "argv": [
+      "/opt/node22/bin/node",
+      "/home/claude/session-architecture-vs-sycophantic-spirals/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/claude/session-architecture-vs-sycophantic-spirals/playwright.config.ts",
+    "rootDir": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/claude/session-architecture-vs-sycophantic-spirals/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium-desktop",
+        "name": "chromium-desktop",
+        "testDir": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/home/claude/session-architecture-vs-sycophantic-spirals/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium-mobile",
+        "name": "chromium-mobile",
+        "testDir": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/claude/session-architecture-vs-sycophantic-spirals/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "name": "chromium-desktop",
+        "testDir": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e",
+        "snapshotDir": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4321/session-architecture-vs-sycophantic-spirals/",
+          "trace": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "executablePath": "/opt/pw-browsers/chromium"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium-desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/claude/session-architecture-vs-sycophantic-spirals/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "name": "chromium-mobile",
+        "testDir": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e",
+        "snapshotDir": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4321/session-architecture-vs-sycophantic-spirals/",
+          "trace": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "executablePath": "/opt/pw-browsers/chromium"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium-mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/gate2/e2e-chromium.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 4,
+    "webServer": {
+      "command": "npx astro preview --host 127.0.0.1 --port 4321 --ignore-lock",
+      "url": "http://127.0.0.1:4321/session-architecture-vs-sycophantic-spirals/",
+      "reuseExistingServer": true,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "grid.spec.ts",
+      "file": "grid.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "/grid/",
+          "file": "grid.spec.ts",
+          "line": 8,
+          "column": 8,
+          "specs": [
+            {
+              "title": "default state equals the source: length 10, no selection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1521,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:09.638Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1033,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:56.485Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "baa43c0a339bdbe5146d-60c5024f2c2cb87517d8",
+              "file": "grid.spec.ts",
+              "line": 9,
+              "column": 5
+            },
+            {
+              "title": "all 26 grid buttons select their lane and length and scroll #runs into view",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 27386,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:09.600Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 27789,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:58.184Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "baa43c0a339bdbe5146d-2deeda943a66fd1310a6",
+              "file": "grid.spec.ts",
+              "line": 18,
+              "column": 5
+            },
+            {
+              "title": "length buttons re-render lanes and meta",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3050,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:09.407Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4550,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:57.784Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "baa43c0a339bdbe5146d-dd29d8945de9abbf64d5",
+              "file": "grid.spec.ts",
+              "line": 44,
+              "column": 5
+            },
+            {
+              "title": "URL state ?c=&n= restores and records a selection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2357,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:09.611Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2164,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:57.792Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "baa43c0a339bdbe5146d-c26d01e6da7104898f41",
+              "file": "grid.spec.ts",
+              "line": 67,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "/full/",
+          "file": "grid.spec.ts",
+          "line": 8,
+          "column": 8,
+          "specs": [
+            {
+              "title": "default state equals the source: length 10, no selection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1831,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:12.128Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 878,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:57.874Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "baa43c0a339bdbe5146d-d7ced0ae49ce1566a031",
+              "file": "grid.spec.ts",
+              "line": 9,
+              "column": 5
+            },
+            {
+              "title": "all 26 grid buttons select their lane and length and scroll #runs into view",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 28869,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:12.842Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 28456,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:58.792Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "baa43c0a339bdbe5146d-babe5b50a8233408fce5",
+              "file": "grid.spec.ts",
+              "line": 18,
+              "column": 5
+            },
+            {
+              "title": "length buttons re-render lanes and meta",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3721,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:12.927Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3146,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:00.857Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "baa43c0a339bdbe5146d-5442031d29b12d454472",
+              "file": "grid.spec.ts",
+              "line": 44,
+              "column": 5
+            },
+            {
+              "title": "URL state ?c=&n= restores and records a selection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2397,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:13.990Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1618,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:03.065Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "baa43c0a339bdbe5146d-2009bb2bfa7ae7ca2dcd",
+              "file": "grid.spec.ts",
+              "line": 67,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "keyboard.spec.ts",
+      "file": "keyboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/grid/ Tab order, focus ring, Enter and Space",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4791,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:16.481Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "keyboard checks run on the desktop projects",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/keyboard.spec.ts",
+                    "line": 8,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "skipped",
+                  "duration": 169,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:04.022Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "keyboard checks run on the desktop projects",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/keyboard.spec.ts",
+                        "line": 8,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "866d5cea7c69e902a1e2-082d0f3690fc82ff3421",
+          "file": "keyboard.spec.ts",
+          "line": 7,
+          "column": 3
+        },
+        {
+          "title": "/full/ Tab order, focus ring, Enter and Space",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 8268,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:16.680Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "keyboard checks run on the desktop projects",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/keyboard.spec.ts",
+                    "line": 8,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "skipped",
+                  "duration": 238,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:04.241Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "keyboard checks run on the desktop projects",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/keyboard.spec.ts",
+                        "line": 8,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "866d5cea7c69e902a1e2-4eeb586182d292417c2c",
+          "file": "keyboard.spec.ts",
+          "line": 7,
+          "column": 3
+        },
+        {
+          "title": "skip link moves focus to the main content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1443,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:21.362Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "desktop only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/keyboard.spec.ts",
+                    "line": 44,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "skipped",
+                  "duration": 321,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:04.502Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "desktop only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/keyboard.spec.ts",
+                        "line": 44,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "866d5cea7c69e902a1e2-e23de5eeef6e4c5e63cf",
+          "file": "keyboard.spec.ts",
+          "line": 43,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "mobile.spec.ts",
+      "file": "mobile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 3,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.068Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1304,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:04.721Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-7ffccc20ca46734d51f8",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "/full/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 2,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.100Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1720,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:04.867Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-bd054dec292782f43a46",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "/grid/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.117Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1197,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:06.056Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-b9fe24268131e66df563",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "/hypotheses/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 2,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.135Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1392,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:06.604Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-a9168dc7dde6dbc4d516",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "/handoffs/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 11,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.159Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1069,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:07.369Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-65dbdb8ca7f161a42c1a",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "/scoring/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.179Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1025,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:08.104Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-31cc97c1939dde1fade5",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "/stopping-rule/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.188Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1390,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:08.449Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-ba0274156440013de6ae",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "/costs/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.204Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1090,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:09.139Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-e48d4d82aab16fd348a1",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "/decisions/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 1,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.213Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1787,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:09.861Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-718cdaa19263d0bacc81",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "/operations/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 1,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.222Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1455,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:10.253Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-29ebba1567c134ebe727",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "/changelog/ no horizontal page overflow, tap targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.237Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1544,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:11.680Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-268ea34d08838e54df44",
+          "file": "mobile.spec.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "tables and timelines scroll inside their containers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.253Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1131,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:11.738Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-b4780a427688aaa46536",
+          "file": "mobile.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "tapping a grid cell selects it on mobile",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "mobile projects only",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                    "line": 6,
+                    "column": 42
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.278Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "mobile projects only",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/mobile.spec.ts",
+                        "line": 6,
+                        "column": 42
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1364,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:12.894Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-139e7d0da011d1ccac59",
+          "file": "mobile.spec.ts",
+          "line": 38,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "motion.spec.ts",
+      "file": "motion.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "reducedMotion reduce → scrollIntoView behavior auto",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1731,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:23.292Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1058,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:13.303Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "472f259022e25a651642-b2547408ddb436b1e7fb",
+          "file": "motion.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "reducedMotion no-preference → scrollIntoView behavior smooth",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 1518,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:25.058Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1877,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:14.280Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "472f259022e25a651642-4ba81051783c9d98f064",
+          "file": "motion.spec.ts",
+          "line": 5,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "routes.spec.ts",
+      "file": "routes.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "doc migration targets L1-L4 resolve to their sections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:54.348Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1183,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.029Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "598fdabf36083b33787e-8ddd52c627f85f7d4648",
+          "file": "routes.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "the 3 Nov PDFs are served",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 120,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:54.948Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 150,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.169Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "598fdabf36083b33787e-a1d9b60be1fb88b03c8c",
+          "file": "routes.spec.ts",
+          "line": 55,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1633,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:25.145Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1496,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:14.379Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-58e316c5b455c6279c2d",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3186,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:26.596Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-index-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2228,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:15.949Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-index-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-4d75daccfd90b2ce4db6",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4740,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:26.806Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-index-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3136,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:16.195Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-index-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-9b325210acd7566a25f4",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "/full/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1409,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:29.813Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1229,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:18.206Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-8ffc2e52c0d97a8d1b79",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8409,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:31.234Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-full/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyOCwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5694,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:19.405Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-full/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyOSwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-6995006dfcac9871fded",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7062,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:31.568Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-full/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyOCwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7076,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:19.482Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-full/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyOSwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-34e2c365239d5c557534",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "/grid/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 936,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:37.534Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1423,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:25.110Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-738b9f56cf45b2cf1e03",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3970,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:38.526Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-grid/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyNCwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3866,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:26.545Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-grid/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyNSwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-877f6dc3aabd12a269ff",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4846,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:38.640Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-grid/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyNCwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3088,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:26.567Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-grid/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyNSwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-53cf7bdaa609069bc532",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "/hypotheses/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1111,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:39.666Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1301,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:26.925Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-a50ca6d605cceb15e486",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2797,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:40.826Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-hypotheses/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAxOSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2367,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:27.313Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-hypotheses/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAxOSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-5653df6490bedae7bfed",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2851,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:41.760Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-hypotheses/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAxOSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2368,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:28.325Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-hypotheses/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAxOSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-0af232e45bf1f93d63d8",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "/handoffs/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1029,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:42.557Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1057,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:29.677Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-dcb8470dd46d01d92471",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2657,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:43.508Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-handoffs/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2119,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:29.720Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-handoffs/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-eefad7783904c0faa90e",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2198,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:43.656Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-handoffs/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2346,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:30.422Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-handoffs/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-0057c052a72587ea32d4",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "/scoring/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1511,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:43.641Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 905,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:30.729Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-a3308dc146dc8315f4dd",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2267,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:44.621Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-scoring/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAxOSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2422,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:30.822Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-scoring/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAxOSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-583d451f8f681c3a86c8",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2554,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:45.163Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-scoring/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAxOSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2236,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:31.682Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-scoring/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAxOSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-c23b4dac79cfc49545de",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "/stopping-rule/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1074,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:45.877Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 941,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:31.851Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-58f5177e90bc96defbce",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2683,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:46.223Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-stopping-rule/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMywKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2341,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:32.777Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-stopping-rule/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyNCwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-186dd8480dae70c3d097",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2278,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:46.899Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-stopping-rule/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMywKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3082,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:32.819Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-stopping-rule/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyNCwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-660d8d1aab170d42a87c",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "/costs/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1021,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:46.996Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1068,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:33.278Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-8f7a9b6de4b8b9bf31c5",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2828,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:47.837Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-costs/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2143,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:33.940Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-costs/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMiwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-0f7d803d4e222e9a2c90",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2460,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:48.048Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-costs/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2661,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:34.362Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-costs/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMiwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-d6632e56577ce0d1d574",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "/decisions/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1145,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:48.914Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1073,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:35.172Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-73225cef3fc14f3a1efe",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2969,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:49.205Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-decisions/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMywKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3084,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:35.916Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-decisions/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyNCwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-4eaa4f2d8946ba80e53e",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4200,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:50.126Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-decisions/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMywKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2850,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:36.092Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-decisions/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyNCwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-3db41db1d2a75373ddd2",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "/operations/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1299,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:50.522Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1162,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:36.263Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-0c738b115c8089e99c31",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2739,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:50.673Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-operations/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2778,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:37.039Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-operations/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMiwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-8fd1d84f2d1415e7ecf4",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3094,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:51.836Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-operations/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMSwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2710,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:37.450Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-operations/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMiwKICJpbmNvbXBsZXRlIjogWwogICJjb2xvci1jb250cmFzdCIKIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-a720eaadddced39a0a58",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "/changelog/",
+          "file": "routes.spec.ts",
+          "line": 20,
+          "column": 8,
+          "specs": [
+            {
+              "title": "HTTP 200, anchors, banner, footer, no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1181,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:52.200Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1067,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:38.954Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-d17de0b4e2c040a0f6e8",
+              "file": "routes.spec.ts",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "axe and console, light theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2602,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:53.403Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-changelog/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMCwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2122,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:39.021Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-changelog/-light.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMCwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-796ba458b0a899baf7b7",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "axe and console, dark theme",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2936,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:32:53.422Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-changelog/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMCwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-mobile",
+                  "projectName": "chromium-mobile",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1746,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-13T23:33:39.828Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "axe-changelog/-dark.json",
+                          "contentType": "application/json",
+                          "body": "ewogInZpb2xhdGlvbnMiOiBbXSwKICJwYXNzZXMiOiAyMCwKICJpbmNvbXBsZXRlIjogW10KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-8acc4ecb40decf060a57",
+              "file": "routes.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "screenshots.spec.ts",
+      "file": "screenshots.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "01-full-top",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:55.079Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.330Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "677a4938ef65bfc6a6e5-ddf2fc6a19696ff97f4d",
+          "file": "screenshots.spec.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "02-core-cell-C2-10-selected",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:55.079Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.330Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "677a4938ef65bfc6a6e5-aa6e56ed8f2c12f9b8e5",
+          "file": "screenshots.spec.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "03-extension-cell-C3-5-selected",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:55.079Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.330Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "677a4938ef65bfc6a6e5-42bc6b937376140e0132",
+          "file": "screenshots.spec.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "04-long-timeline-C1R-2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:55.079Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.331Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "677a4938ef65bfc6a6e5-1d510175fac0a529d2e0",
+          "file": "screenshots.spec.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "05-stopping-rule",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:55.079Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.331Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "677a4938ef65bfc6a6e5-5271c996600432c92ffc",
+          "file": "screenshots.spec.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "06-costs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:55.079Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.331Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "677a4938ef65bfc6a6e5-92202a12db3b35051e1e",
+          "file": "screenshots.spec.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "07-grid-dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:55.079Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.331Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "677a4938ef65bfc6a6e5-9a1790ab348b30165aca",
+          "file": "screenshots.spec.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "08-decisions-dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:55.079Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.331Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "677a4938ef65bfc6a6e5-92291c5805f0c819c72a",
+          "file": "screenshots.spec.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "09-changelog-versions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:55.079Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.331Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "677a4938ef65bfc6a6e5-4ad36c447e622d13d183",
+          "file": "screenshots.spec.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "10-overview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:32:55.080Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "set SCREENSHOTS=1",
+                  "location": {
+                    "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T23:33:40.331Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "set SCREENSHOTS=1",
+                      "location": {
+                        "file": "/home/claude/session-architecture-vs-sycophantic-spirals/tests/e2e/screenshots.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "677a4938ef65bfc6a6e5-ec5f4b3cae2938d1a43d",
+          "file": "screenshots.spec.ts",
+          "line": 21,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-13T23:32:07.307Z",
+    "duration": 94571.68299999999,
+    "expected": 106,
+    "skipped": 36,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

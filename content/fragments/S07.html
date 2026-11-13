@@ -1,0 +1,13 @@
+<section class="panel" id="scoring">
+    <h2>Scoring and judge release</h2>
+    <ul class="notes">
+      <li>Two human raters, blind to cell and stance, independently score a calibration sample from the pilot with the same rubric as the judge. Sample size: pre-registration.</li>
+      <li><strong>Team</strong> (decided 12 Nov, evening): at most five people. Project lead 1, experiment engineering 1 to 2, methods and statistics who is also rater 1, rater 2. The optional modeling arm is taken on only if a member within the five has the skills; it adds no person. The lead writes briefs and rubric and does not rate; the engineers run the pipeline and do not rate.</li>
+      <li><strong>Blind rating procedure</strong> (derived): (1) an engineer builds the rating packages: random item IDs, cell, stance, model names and template headers removed; the key stays with the engineer. (2) Both raters validate the planted items and score the calibration sample independently, without contact about items. (3) Each rater locks the scores (timestamped export) before any unmasking. (4) Only then does the statistics member receive the key and unmasked pilot data for the power analysis and alpha. (5) The same order holds for every later rating round: rate and lock first, unmask after. (6) Each rater notes for every item whether it revealed its cell; these items are reported. Transcripts with cuts and reviews cannot be fully masked, which is a stated limit.</li>
+      <li>Agreement is computed with Krippendorff's alpha, separately for each scored variable at its level of measurement: nominal for flaw present or not at each threshold (status 2 or higher; 1 or higher) and for "substantive" and "new" objections; ordinal for the status level 0 to 3.</li>
+      <li>Human agreement α(H1, H2) from the two raters. Judge agreement: α(J, H1) and α(J, H2) on the same items, averaged.</li>
+      <li>Release rule (decided 12 Nov): the judge scores a variable at scale if its agreement is at least as high as the agreement between the humans. No absolute number is set. A bootstrap over items gives intervals for both alphas and their difference; all three are reported.</li>
+      <li>The relative rule only means something if the humans agree with each other. Human alpha is always reported next to the decision, and low human agreement points to the rubric, not to the judge (derived).</li>
+      <li>The judge scores all runs in three passes (final brief against V0, brief at each checkpoint, transcript turn by turn), classifies objections after each review, and scores the post-review snapshot at the first firing of each stopping rule.</li>
+    </ul>
+  </section>

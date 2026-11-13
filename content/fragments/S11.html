@@ -1,0 +1,17 @@
+<section class="panel" id="instance-state">
+    <h2>What each instance has, before and after a cut</h2>
+    <p class="hint">Session 1 of C1 to C4 starts like C0: system prompt and brief V0. The table shows every later handover. At length 10 a cut follows turns 10, 20 and 30; at length 2 it follows every second turn pair. C3 is extension only.</p>
+    <div class="scroll" tabindex="0"><table class="tbl">
+      <thead><tr><th>Cell</th><th>The working instance has</th><th>It writes before the cut</th><th>The next instance receives</th><th>First task after the cut</th></tr></thead>
+      <tbody>
+        <tr><td>C0</td><td>System prompt, V0, every turn so far</td><td>No cut; final brief when the 40 turn pairs are used up</td><td>—</td><td>—</td></tr>
+        <tr><td>C0+R</td><td>As C0, plus its own review records</td><td>No cut; at turns 10, 20, 30 a review step inside the same context</td><td>—</td><td>—</td></tr>
+        <tr><td>C1</td><td>What it started with, plus the turns of its own session</td><td>Free summary, current brief</td><td>System prompt, summary, current brief, instruction "continue"</td><td>Continue the work</td></tr>
+        <tr><td>C1+R</td><td>What it started with, plus its review record and the turns of its own session</td><td>Free summary, current brief</td><td>System prompt, summary, current brief, instruction "review, then continue"</td><td>Review, review record, then continue</td></tr>
+        <tr><td>C2−R (opt.)</td><td>What it started with, plus the turns of its own session</td><td>Structured report, current brief</td><td>System prompt, report, current brief, instruction "continue"</td><td>Continue the work</td></tr>
+        <tr><td>C2</td><td>What it started with, plus its review record and the turns of its own session</td><td>Structured report, current brief</td><td>System prompt, report, current brief, instruction "review, then continue"</td><td>Review, review record, then continue</td></tr>
+        <tr><td>C4</td><td>As C2</td><td>As C2</td><td>As C2, on the other model family</td><td>As C2</td></tr>
+        <tr><td>User</td><td>Role card and the whole conversation</td><td>—</td><td>Nothing new: the user only sees the next model reply</td><td>—</td></tr>
+      </tbody>
+    </table></div>
+  </section>

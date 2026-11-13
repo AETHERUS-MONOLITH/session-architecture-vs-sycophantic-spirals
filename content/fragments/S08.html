@@ -1,0 +1,31 @@
+<section class="panel" id="costs">
+    <h2>Costs, updated 12 Nov</h2>
+    <p class="hint">The estimate sent on 3 Nov (PDF) stays the reference for what Robert has. Same prices, planning values and method as then; only operations added since are priced. USD, rounded; totals may differ by 1 from their parts.</p>
+    <div class="scroll" tabindex="0"><table class="tbl">
+      <thead><tr><th>Scenario</th><th>3 Nov: core · pilot · role test · total</th><th>12 Nov: core · pilot · role test with pre-runs · total</th></tr></thead>
+      <tbody>
+        <tr><td>With prompt caching</td><td>446 · 178 · 25 · 650</td><td>499 · 199 · 31 · 729</td></tr>
+        <tr><td>User-model cache hits 50%</td><td>587 · 235 · 67 · 888</td><td>639 · 256 · 82 · 977</td></tr>
+        <tr><td>No user-model cache hits</td><td>727 · 291 · 109 · 1,127</td><td>779 · 312 · 134 · 1,225</td></tr>
+        <tr><td>No caching</td><td>1,080 · 432 · 109 · 1,621</td><td>1,157 · 463 · 134 · 1,754</td></tr>
+      </tbody>
+    </table></div>
+    <div class="scroll" tabindex="0"><table class="tbl">
+      <thead><tr><th>New model operation (added 12 Nov)</th><th>Calls in the core</th><th>USD with caching</th><th>USD without caching</th></tr></thead>
+      <tbody>
+        <tr><td>Post-review snapshot (side call on the reviewing model)</td><td>one per existing review: 2,070 (1,710 at length 2 and 270 at length 10 in C1+R, C2, C4; 90 in C0+R)</td><td>33</td><td>58</td></tr>
+        <tr><td>Objection classification by the judge</td><td>one per existing review: 2,070</td><td>17</td><td>17</td></tr>
+        <tr><td>Scoring the snapshot at the first firing of three rules</td><td>at most 630 (210 runs × 3)</td><td>3</td><td>3</td></tr>
+        <tr><td>Core increase</td><td></td><td>53</td><td>77</td></tr>
+        <tr><td>Pilot (0.4 × core, same pipeline)</td><td></td><td>+21</td><td>+31</td></tr>
+        <tr><td>Pre-runs for the role-stability thresholds</td><td>20 scripted runs (planning assumption)</td><td>6 (15 at 50% hits)</td><td>24</td></tr>
+      </tbody>
+    </table></div>
+    <ul class="notes">
+      <li>The 2,070 reviews themselves (90 in C0+R, 1,980 in C1+R, C2 and C4) were already part of the design of 3 Nov and are costed there in the review column. They are not new. New are only the calls listed above, made once per review or per first firing, and the pre-runs.</li>
+      <li>Unchanged: review frequency (already costed per review), model families and prices, 30 runs per cell, human rating, judge calibration on the human sample (the judge scores those runs anyway).</li>
+      <li>No existing artifact can replace the snapshot: the review record holds no full brief, and the next brief written out comes after further turns. Writing the brief into the review output would change the review itself.</li>
+      <li>Assumptions as in the cost model of 3 Nov: current brief 1,500 tokens, system prompt and V0 2,000, summary or report 800, review output 800. A snapshot reads the reviewer's context from the cache (in C0+R the whole conversation so far) and writes one brief; classification input is the review records so far, the reviewed material and a 500-token instruction, output 300; snapshot scoring 4,000 tokens in, 300 out.</li>
+      <li>AISC supports up to 1,000 USD. With caching the total is about 729 USD. The limit now holds as long as about 45% of the user model's repeated input comes from the cache (3 Nov: 27%). Cache hits are logged in the pilot, and the scope is reduced before the main runs if needed (decided earlier).</li>
+    </ul>
+  </section>

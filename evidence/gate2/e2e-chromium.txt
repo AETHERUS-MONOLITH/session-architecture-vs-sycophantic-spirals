@@ -1,0 +1,148 @@
+
+Running 142 tests using 4 workers
+
+  ✓    4 [chromium-desktop] › tests/e2e/grid.spec.ts:9:5 › /grid/ › default state equals the source: length 10, no selection (1.5s)
+  ✓    1 [chromium-desktop] › tests/e2e/grid.spec.ts:44:5 › /grid/ › length buttons re-render lanes and meta (3.0s)
+  ✓    3 [chromium-desktop] › tests/e2e/grid.spec.ts:67:5 › /grid/ › URL state ?c=&n= restores and records a selection (2.4s)
+  ✓    5 [chromium-desktop] › tests/e2e/grid.spec.ts:9:5 › /full/ › default state equals the source: length 10, no selection (1.8s)
+  ✓    8 [chromium-desktop] › tests/e2e/grid.spec.ts:67:5 › /full/ › URL state ?c=&n= restores and records a selection (2.4s)
+  ✓    7 [chromium-desktop] › tests/e2e/grid.spec.ts:44:5 › /full/ › length buttons re-render lanes and meta (3.7s)
+  ✓    9 [chromium-desktop] › tests/e2e/keyboard.spec.ts:7:3 › /grid/ Tab order, focus ring, Enter and Space (4.8s)
+  ✓   11 [chromium-desktop] › tests/e2e/keyboard.spec.ts:43:1 › skip link moves focus to the main content (1.4s)
+  -   12 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › / no horizontal page overflow, tap targets
+  -   13 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › /full/ no horizontal page overflow, tap targets
+  -   14 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › /grid/ no horizontal page overflow, tap targets
+  -   15 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › /hypotheses/ no horizontal page overflow, tap targets
+  -   16 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › /handoffs/ no horizontal page overflow, tap targets
+  -   17 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › /scoring/ no horizontal page overflow, tap targets
+  -   18 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › /stopping-rule/ no horizontal page overflow, tap targets
+  -   19 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › /costs/ no horizontal page overflow, tap targets
+  -   20 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › /decisions/ no horizontal page overflow, tap targets
+  -   21 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › /operations/ no horizontal page overflow, tap targets
+  -   22 [chromium-desktop] › tests/e2e/mobile.spec.ts:9:3 › /changelog/ no horizontal page overflow, tap targets
+  -   23 [chromium-desktop] › tests/e2e/mobile.spec.ts:24:1 › tables and timelines scroll inside their containers
+  -   24 [chromium-desktop] › tests/e2e/mobile.spec.ts:38:1 › tapping a grid cell selects it on mobile
+  ✓   10 [chromium-desktop] › tests/e2e/keyboard.spec.ts:7:3 › /full/ Tab order, focus ring, Enter and Space (8.3s)
+  ✓   25 [chromium-desktop] › tests/e2e/motion.spec.ts:5:3 › reducedMotion reduce → scrollIntoView behavior auto (1.7s)
+  ✓   26 [chromium-desktop] › tests/e2e/motion.spec.ts:5:3 › reducedMotion no-preference → scrollIntoView behavior smooth (1.5s)
+  ✓   27 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › / › HTTP 200, anchors, banner, footer, no console errors (1.6s)
+  ✓   28 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › / › axe and console, light theme (3.2s)
+  ✓   30 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › /full/ › HTTP 200, anchors, banner, footer, no console errors (1.4s)
+  ✓   29 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › / › axe and console, dark theme (4.7s)
+  ✓    2 [chromium-desktop] › tests/e2e/grid.spec.ts:18:5 › /grid/ › all 26 grid buttons select their lane and length and scroll #runs into view (27.4s)
+  ✓   33 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › /grid/ › HTTP 200, anchors, banner, footer, no console errors (936ms)
+  ✓   32 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /full/ › axe and console, dark theme (7.1s)
+  ✓   31 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /full/ › axe and console, light theme (8.4s)
+  ✓   36 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › /hypotheses/ › HTTP 200, anchors, banner, footer, no console errors (1.1s)
+  ✓    6 [chromium-desktop] › tests/e2e/grid.spec.ts:18:5 › /full/ › all 26 grid buttons select their lane and length and scroll #runs into view (28.9s)
+  ✓   34 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /grid/ › axe and console, light theme (4.0s)
+  ✓   35 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /grid/ › axe and console, dark theme (4.8s)
+  ✓   37 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /hypotheses/ › axe and console, light theme (2.8s)
+  ✓   39 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › /handoffs/ › HTTP 200, anchors, banner, footer, no console errors (1.0s)
+  ✓   38 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /hypotheses/ › axe and console, dark theme (2.9s)
+  ✓   41 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › /scoring/ › HTTP 200, anchors, banner, footer, no console errors (1.5s)
+  ✓   42 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /handoffs/ › axe and console, dark theme (2.2s)
+  ✓   40 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /handoffs/ › axe and console, light theme (2.7s)
+  ✓   43 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /scoring/ › axe and console, light theme (2.3s)
+  ✓   45 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › /stopping-rule/ › HTTP 200, anchors, banner, footer, no console errors (1.1s)
+  ✓   44 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /scoring/ › axe and console, dark theme (2.6s)
+  ✓   48 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › /costs/ › HTTP 200, anchors, banner, footer, no console errors (1.0s)
+  ✓   46 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /stopping-rule/ › axe and console, light theme (2.7s)
+  ✓   47 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /stopping-rule/ › axe and console, dark theme (2.3s)
+  ✓   51 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › /decisions/ › HTTP 200, anchors, banner, footer, no console errors (1.1s)
+  ✓   50 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /costs/ › axe and console, dark theme (2.5s)
+  ✓   49 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /costs/ › axe and console, light theme (2.8s)
+  ✓   54 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › /operations/ › HTTP 200, anchors, banner, footer, no console errors (1.3s)
+  ✓   52 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /decisions/ › axe and console, light theme (3.0s)
+  ✓   57 [chromium-desktop] › tests/e2e/routes.spec.ts:21:5 › /changelog/ › HTTP 200, anchors, banner, footer, no console errors (1.2s)
+  ✓   55 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /operations/ › axe and console, light theme (2.7s)
+  ✓   53 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /decisions/ › axe and console, dark theme (4.2s)
+  ✓   56 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /operations/ › axe and console, dark theme (3.1s)
+  ✓   61 [chromium-desktop] › tests/e2e/routes.spec.ts:55:1 › the 3 Nov PDFs are served (120ms)
+  -   62 [chromium-desktop] › tests/e2e/screenshots.spec.ts:21:3 › 01-full-top
+  -   63 [chromium-desktop] › tests/e2e/screenshots.spec.ts:21:3 › 02-core-cell-C2-10-selected
+  -   64 [chromium-desktop] › tests/e2e/screenshots.spec.ts:21:3 › 03-extension-cell-C3-5-selected
+  -   65 [chromium-desktop] › tests/e2e/screenshots.spec.ts:21:3 › 04-long-timeline-C1R-2
+  -   66 [chromium-desktop] › tests/e2e/screenshots.spec.ts:21:3 › 05-stopping-rule
+  -   67 [chromium-desktop] › tests/e2e/screenshots.spec.ts:21:3 › 06-costs
+  -   68 [chromium-desktop] › tests/e2e/screenshots.spec.ts:21:3 › 07-grid-dark
+  -   69 [chromium-desktop] › tests/e2e/screenshots.spec.ts:21:3 › 08-decisions-dark
+  -   70 [chromium-desktop] › tests/e2e/screenshots.spec.ts:21:3 › 09-changelog-versions
+  -   71 [chromium-desktop] › tests/e2e/screenshots.spec.ts:21:3 › 10-overview
+  ✓   60 [chromium-desktop] › tests/e2e/routes.spec.ts:47:1 › doc migration targets L1-L4 resolve to their sections (1.4s)
+  ✓   58 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /changelog/ › axe and console, light theme (2.6s)
+  ✓   59 [chromium-desktop] › tests/e2e/routes.spec.ts:33:7 › /changelog/ › axe and console, dark theme (2.9s)
+  ✓   72 [chromium-mobile] › tests/e2e/grid.spec.ts:9:5 › /grid/ › default state equals the source: length 10, no selection (1.0s)
+  ✓   75 [chromium-mobile] › tests/e2e/grid.spec.ts:9:5 › /full/ › default state equals the source: length 10, no selection (878ms)
+  ✓   74 [chromium-mobile] › tests/e2e/grid.spec.ts:67:5 › /grid/ › URL state ?c=&n= restores and records a selection (2.2s)
+  ✓   73 [chromium-mobile] › tests/e2e/grid.spec.ts:44:5 › /grid/ › length buttons re-render lanes and meta (4.5s)
+  ✓   78 [chromium-mobile] › tests/e2e/grid.spec.ts:44:5 › /full/ › length buttons re-render lanes and meta (3.1s)
+  -   80 [chromium-mobile] › tests/e2e/keyboard.spec.ts:7:3 › /grid/ Tab order, focus ring, Enter and Space
+  -   81 [chromium-mobile] › tests/e2e/keyboard.spec.ts:7:3 › /full/ Tab order, focus ring, Enter and Space
+  ✓   79 [chromium-mobile] › tests/e2e/grid.spec.ts:67:5 › /full/ › URL state ?c=&n= restores and records a selection (1.6s)
+  -   82 [chromium-mobile] › tests/e2e/keyboard.spec.ts:43:1 › skip link moves focus to the main content
+  ✓   83 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › / no horizontal page overflow, tap targets (1.3s)
+  ✓   84 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › /full/ no horizontal page overflow, tap targets (1.7s)
+  ✓   85 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › /grid/ no horizontal page overflow, tap targets (1.2s)
+  ✓   86 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › /hypotheses/ no horizontal page overflow, tap targets (1.4s)
+  ✓   87 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › /handoffs/ no horizontal page overflow, tap targets (1.1s)
+  ✓   88 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › /scoring/ no horizontal page overflow, tap targets (1.0s)
+  ✓   89 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › /stopping-rule/ no horizontal page overflow, tap targets (1.4s)
+  ✓   90 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › /costs/ no horizontal page overflow, tap targets (1.1s)
+  ✓   91 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › /decisions/ no horizontal page overflow, tap targets (1.8s)
+  ✓   92 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › /operations/ no horizontal page overflow, tap targets (1.5s)
+  ✓   94 [chromium-mobile] › tests/e2e/mobile.spec.ts:24:1 › tables and timelines scroll inside their containers (1.1s)
+  ✓   93 [chromium-mobile] › tests/e2e/mobile.spec.ts:9:3 › /changelog/ no horizontal page overflow, tap targets (1.5s)
+  ✓   95 [chromium-mobile] › tests/e2e/mobile.spec.ts:38:1 › tapping a grid cell selects it on mobile (1.4s)
+  ✓   96 [chromium-mobile] › tests/e2e/motion.spec.ts:5:3 › reducedMotion reduce → scrollIntoView behavior auto (1.1s)
+  ✓   98 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › / › HTTP 200, anchors, banner, footer, no console errors (1.5s)
+  ✓   97 [chromium-mobile] › tests/e2e/motion.spec.ts:5:3 › reducedMotion no-preference → scrollIntoView behavior smooth (1.9s)
+  ✓   99 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › / › axe and console, light theme (2.2s)
+  ✓  100 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › / › axe and console, dark theme (3.1s)
+  ✓  101 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › /full/ › HTTP 200, anchors, banner, footer, no console errors (1.2s)
+  ✓  102 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /full/ › axe and console, light theme (5.7s)
+  ✓  104 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › /grid/ › HTTP 200, anchors, banner, footer, no console errors (1.4s)
+  ✓  103 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /full/ › axe and console, dark theme (7.1s)
+  ✓   76 [chromium-mobile] › tests/e2e/grid.spec.ts:18:5 › /grid/ › all 26 grid buttons select their lane and length and scroll #runs into view (27.8s)
+  ✓   77 [chromium-mobile] › tests/e2e/grid.spec.ts:18:5 › /full/ › all 26 grid buttons select their lane and length and scroll #runs into view (28.5s)
+  ✓  107 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › /hypotheses/ › HTTP 200, anchors, banner, footer, no console errors (1.3s)
+  ✓  106 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /grid/ › axe and console, dark theme (3.1s)
+  ✓  108 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /hypotheses/ › axe and console, light theme (2.4s)
+  ✓  105 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /grid/ › axe and console, light theme (3.9s)
+  ✓  109 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /hypotheses/ › axe and console, dark theme (2.4s)
+  ✓  110 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › /handoffs/ › HTTP 200, anchors, banner, footer, no console errors (1.1s)
+  ✓  113 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › /scoring/ › HTTP 200, anchors, banner, footer, no console errors (905ms)
+  ✓  111 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /handoffs/ › axe and console, light theme (2.1s)
+  ✓  112 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /handoffs/ › axe and console, dark theme (2.3s)
+  ✓  116 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › /stopping-rule/ › HTTP 200, anchors, banner, footer, no console errors (941ms)
+  ✓  114 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /scoring/ › axe and console, light theme (2.4s)
+  ✓  115 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /scoring/ › axe and console, dark theme (2.2s)
+  ✓  119 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › /costs/ › HTTP 200, anchors, banner, footer, no console errors (1.1s)
+  ✓  117 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /stopping-rule/ › axe and console, light theme (2.3s)
+  ✓  118 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /stopping-rule/ › axe and console, dark theme (3.1s)
+  ✓  120 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /costs/ › axe and console, light theme (2.1s)
+  ✓  122 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › /decisions/ › HTTP 200, anchors, banner, footer, no console errors (1.1s)
+  ✓  121 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /costs/ › axe and console, dark theme (2.7s)
+  ✓  125 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › /operations/ › HTTP 200, anchors, banner, footer, no console errors (1.2s)
+  ✓  124 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /decisions/ › axe and console, dark theme (2.9s)
+  ✓  123 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /decisions/ › axe and console, light theme (3.1s)
+  ✓  126 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /operations/ › axe and console, light theme (2.8s)
+  ✓  128 [chromium-mobile] › tests/e2e/routes.spec.ts:21:5 › /changelog/ › HTTP 200, anchors, banner, footer, no console errors (1.1s)
+  ✓  127 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /operations/ › axe and console, dark theme (2.7s)
+  ✓  132 [chromium-mobile] › tests/e2e/routes.spec.ts:55:1 › the 3 Nov PDFs are served (150ms)
+  -  133 [chromium-mobile] › tests/e2e/screenshots.spec.ts:21:3 › 01-full-top
+  -  134 [chromium-mobile] › tests/e2e/screenshots.spec.ts:21:3 › 02-core-cell-C2-10-selected
+  -  135 [chromium-mobile] › tests/e2e/screenshots.spec.ts:21:3 › 03-extension-cell-C3-5-selected
+  -  136 [chromium-mobile] › tests/e2e/screenshots.spec.ts:21:3 › 04-long-timeline-C1R-2
+  -  137 [chromium-mobile] › tests/e2e/screenshots.spec.ts:21:3 › 05-stopping-rule
+  -  138 [chromium-mobile] › tests/e2e/screenshots.spec.ts:21:3 › 06-costs
+  -  139 [chromium-mobile] › tests/e2e/screenshots.spec.ts:21:3 › 07-grid-dark
+  -  140 [chromium-mobile] › tests/e2e/screenshots.spec.ts:21:3 › 08-decisions-dark
+  -  141 [chromium-mobile] › tests/e2e/screenshots.spec.ts:21:3 › 09-changelog-versions
+  -  142 [chromium-mobile] › tests/e2e/screenshots.spec.ts:21:3 › 10-overview
+  ✓  129 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /changelog/ › axe and console, light theme (2.1s)
+  ✓  131 [chromium-mobile] › tests/e2e/routes.spec.ts:47:1 › doc migration targets L1-L4 resolve to their sections (1.2s)
+  ✓  130 [chromium-mobile] › tests/e2e/routes.spec.ts:33:7 › /changelog/ › axe and console, dark theme (1.7s)
+
+  36 skipped
+  106 passed (1.6m)

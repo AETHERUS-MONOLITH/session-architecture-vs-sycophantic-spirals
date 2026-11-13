@@ -1,0 +1,109 @@
+/* Site styles on top of the verbatim source stylesheet (source.css).
+   Only chrome, layout across pages, and accessibility adjustments live here. */
+
+/* Contrast (WCAG 2.1 AA): the source --ext (#8a96a6) reaches 3.0:1 on white and 2.8:1 on the page
+   background, used both as a dashed border and as cell text. The border token is darkened to reach
+   3:1 on both backgrounds; text in dashed cells uses --muted (>= 4.5:1). Dark-theme --ext already passes. */
+:root { --ext: #748091; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --ext: #6c7888; }
+}
+:root[data-theme="dark"] { --ext: #6c7888; }
+.ext, button.cell.ext { color: var(--muted); }
+
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; min-width: 0; overflow-wrap: break-word; }
+.frag { display: contents; }
+
+/* Skip link */
+.skip-link { position: absolute; left: 12px; top: -48px; z-index: 10; background: var(--surface); color: var(--fg); padding: 8px 12px; border: 2px solid var(--fg); border-radius: 6px; }
+.skip-link:focus { top: 8px; }
+
+/* Site header and navigation */
+header.site-head { display: block; background: var(--surface); border-bottom: 1px solid var(--line); }
+.site-head-inner {
+  max-width: 1180px; margin: 0 auto; display: grid; gap: 8px;
+  padding: 12px max(16px, env(safe-area-inset-right, 0px)) 10px max(16px, env(safe-area-inset-left, 0px));
+}
+.brand { font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg); text-decoration: none; justify-self: start; padding: 2px 0; }
+.brand:hover { text-decoration: underline; }
+.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.site-nav a {
+  display: inline-flex; align-items: center; min-height: 28px; padding: 2px 9px; border-radius: 6px;
+  font-size: 14px; color: var(--fg); text-decoration: none; border: 1px solid transparent;
+}
+.site-nav a:hover { border-color: var(--line); }
+.site-nav a[aria-current="page"] { background: var(--core); color: var(--core-ink); }
+.site-nav.secondary a { font-family: var(--font-mono); font-size: 13px; border-color: var(--line); }
+.site-nav.secondary a[aria-current="page"] { border-color: var(--core); }
+a:focus-visible, .scroll:focus-visible, .tlwrap:focus-visible, main:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+main:focus:not(:focus-visible) { outline: none; }
+
+/* Status banner on every page */
+.status-banner {
+  max-width: 1180px; margin: 2px auto 12px; box-sizing: border-box;
+  padding: 8px 12px; border: 1.5px dashed var(--ext); border-radius: 8px;
+  font-size: 14px; color: var(--fg); background: var(--surface);
+  width: calc(100% - 2 * max(16px, env(safe-area-inset-left, 0px)));
+}
+
+.page-title { margin-bottom: -6px; }
+
+/* Overview contents */
+.contents-list { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 15px; }
+.contents-list a, .contents a { color: var(--fg); }
+.contents-list li { min-height: 24px; }
+
+/* Versions and website changes */
+.versions { margin: 0; padding-left: 20px; display: grid; gap: 14px; font-size: 14px; }
+.versions .hint { margin: 2px 0 4px; }
+.files { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.files li { display: flex; flex-wrap: wrap; gap: 2px 8px; align-items: baseline; }
+.files .k, .site-foot .k { color: var(--muted); font-size: 13px; }
+code { font-family: var(--font-mono); font-size: 12.5px; }
+code.hash { overflow-wrap: anywhere; word-break: break-all; }
+.site-change { display: grid; gap: 6px; }
+.site-change + .site-change { border-top: 1px solid var(--line); padding-top: 12px; }
+.site-change h3 { font-family: var(--font-display); font-weight: 600; font-size: 17px; margin: 0; }
+.site-change h4 { font-size: 14px; margin: 4px 0 0; font-weight: 600; }
+
+/* Footer */
+.site-foot { border-top: 1px solid var(--line); background: var(--surface); }
+.site-foot-inner {
+  max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: center;
+  padding: 14px max(16px, env(safe-area-inset-right, 0px)) 18px max(16px, env(safe-area-inset-left, 0px));
+  font-size: 13px; color: var(--fg);
+}
+.site-foot a { color: var(--fg); display: inline-flex; align-items: center; min-height: 24px; }
+
+/* Tables and timelines scroll inside their own containers; the page never scrolls sideways. */
+.wrap > * { min-width: 0; }
+.scroll, .tlwrap, .gridwrap { max-width: 100%; }
+
+/* Smooth scrolling is never forced under reduced motion (the controller also checks it). */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .b { transition: none; }
+}
+
+@media print {
+  .site-head, .skip-link, .site-foot a { display: none; }
+  body { background: #fff; color: #000; }
+  .panel { break-inside: avoid-page; border-color: #999; }
+  .scroll, .tlwrap, .gridwrap { overflow: visible; }
+}
+
+/* Grid items never grow past their track because of a wide table or timeline inside them
+   (the scroll containers handle the overflow). */
+.panel > *, .panel > .frag > *, .open, .open > * { min-width: 0; }
+
+/* Link lists: targets of at least 24 CSS px. */
+.contents-list a, .files a { display: inline-block; padding: 3px 0; }
+.files a { color: var(--core); }
+
+@media (max-width: 640px) {
+  .brand { font-size: 17px; }
+  .site-nav ul { gap: 2px 2px; }
+  .site-nav a { font-size: 13px; padding: 1px 7px; min-height: 26px; }
+  .site-nav.secondary a { font-size: 12px; }
+}

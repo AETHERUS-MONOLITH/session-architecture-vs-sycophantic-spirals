@@ -1,0 +1,1 @@
+linkcheck: 11 pages, 197 internal links, 18 in-page anchors, 0 external links, 0 claude.ai hrefs, 0 external runtime requests; anchors 72/72; problems: 0

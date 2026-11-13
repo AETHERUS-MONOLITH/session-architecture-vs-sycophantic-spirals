@@ -1,0 +1,18 @@
+{
+ "note": "Items of the frozen source that tools/inventory.py does not capture, found during Gate 2 (the generator walks only <header> and <section> elements). Same ID rules, normalisation and sha16 as the Gate 1 inventory. Mapped like the neighbouring S14 strip.",
+ "items": [
+  {
+   "id": "F01",
+   "kind": "paragraph",
+   "tag": "p",
+   "text": "Reference model: Chandra, Kleiman-Weiner, Ragan-Kelley & Tenenbaum (2026), fixed 100-round conversations with a memoryless bot; breaks, fresh instances and review are not tested there. In the C4 lane the model family alternates at every handoff, so every review is cross-model.",
+   "sha16": "b4dc6b3bff1d928f",
+   "class": "foot",
+   "source_position": "last child of div.wrap, after S14, outside every <section>",
+   "route": "/",
+   "anchor": "reference-model",
+   "full_route": "/full/",
+   "full_anchor": "reference-model"
+  }
+ ]
+}

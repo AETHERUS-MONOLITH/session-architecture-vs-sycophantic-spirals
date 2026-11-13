@@ -1,0 +1,120 @@
+# Site chrome: the only text on the site that is not taken from the frozen source.
+# tools/parity.mjs (check A4) allows exactly these strings outside the content fragments.
+# Research content never goes here. Terms follow the source vocabulary.
+
+site:
+  brand: "Session Architecture vs. Sycophantic Spirals"
+  title_separator: " · "
+  skip_link: "Skip to content"
+  banner: "Design documentation of a planned study (AISC 12). It reports no results."
+  nav_primary_label: "Documentation sections"
+  nav_secondary_label: "Single-page view"
+  footer_label: "Version"
+  footer_content_version_label: "Content version"
+  footer_content_version: "1794606123-2939, frozen live grid of 13 Nov 2026"
+  footer_site_version_label: "Site version"
+  footer_site_version: "0.1.0"
+  footer_versions_link: "Versions and website changes"
+
+# Primary navigation is the topical routes; /full/ is the secondary single-page view.
+routes:
+  - path: "/"
+    nav: "Overview"
+    title: "Overview"
+  - path: "/grid/"
+    nav: "Grid and timelines"
+    title: "Factorial grid and run timelines"
+  - path: "/hypotheses/"
+    nav: "Hypotheses"
+    title: "Hypotheses and contrasts"
+  - path: "/handoffs/"
+    nav: "Handoff"
+    title: "One handoff, step by step"
+  - path: "/scoring/"
+    nav: "Scoring"
+    title: "Measurement, scoring and judge release"
+  - path: "/stopping-rule/"
+    nav: "Stopping rule"
+    title: "Stopping rule"
+  - path: "/costs/"
+    nav: "Costs"
+    title: "Cost model"
+  - path: "/decisions/"
+    nav: "Design status"
+    title: "Design status and open specifications"
+  - path: "/operations/"
+    nav: "Operations"
+    title: "Artifacts, instance state, error path"
+  - path: "/changelog/"
+    nav: "Change log"
+    title: "Change log and versions"
+secondary_routes:
+  - path: "/full/"
+    nav: "Complete grid (single page)"
+    title: "Complete grid (single page)"
+
+overview:
+  contents_heading: "Sections"
+  full_view_note: "The complete grid on one page, in the original order:"
+
+versions:
+  heading: "Versions"
+  intro: "Two histories are kept apart. The change log above is the methodological history, copied verbatim from the frozen grid. Engineering changes to this website are listed under Website changes."
+  sha_label: "SHA-256"
+  archived_as_label: "Archived in the repository as"
+  entries:
+    - id: "v-2026-11-03"
+      label: "3 Nov 2026: version sent with the proposal"
+      status: "Historical reference, immutable. The PDFs are served as sent."
+      files:
+        - text: "Session Architecture Grid, 3 Nov 2026 (PDF)"
+          href: "/archive/2026-11-03/Session_Architecture_Grid_2026-11-03.pdf"
+          path: "archive/historical/2026-11-03/Session_Architecture_Grid_2026-11-03.pdf"
+          sha256: "20ae2ef3b2c442e48586059af2a876800aeeb3e3bfb7e1c5b0c5754846c1b3b0"
+        - text: "API cost estimate, 3 Nov 2026 (PDF)"
+          href: "/archive/2026-11-03/API_cost_estimate_2026-11-03.pdf"
+          path: "archive/historical/2026-11-03/API_cost_estimate_2026-11-03.pdf"
+          sha256: "1ff3069439c73fa6f176477bf0938bf9a6aa76eabe310be118f5833352f4b85b"
+    - id: "v-1794516700-7352"
+      label: "12 Nov 2026, evening: live version 1794516700-7352"
+      status: "Superseded. Archived byte for byte (the uploaded reference HTML)."
+      files:
+        - path: "archive/original/Session Architecture Grid (1).html"
+          sha256: "7f1dfd9dca402cb5f42ef981e1dc5e0d28bebadca3fc6284da57df281f752651"
+    - id: "v-1794606123-2939"
+      label: "13 Nov 2026: live version 1794606123-2939"
+      status: "Frozen for this website; the current content version. Source tag source-2026-11-13-v1794606123-2939."
+      files:
+        - path: "archive/frozen/session-architecture-grid_live_2026-11-13_v1794606123-2939.html"
+          sha256: "f35025bb3cbbd6379a0f3702728601ccc07c3e291fb7e9fdd502b8997aed30d0"
+
+site_changes:
+  heading: "Website changes"
+  intro: "Engineering changes to the website. They are not research decisions and do not enter the methodological change log."
+  entries:
+    - id: "site-0.1.0"
+      label: "0.1.0 (Gate 2 pull request, not yet published)"
+      items:
+        - "Initial documentation website built from the frozen grid 1794606123-2939: topical pages plus the complete grid on one page, both rendered from the same content fragments."
+        - "Self-hosted fonts (Newsreader, IBM Plex Sans, IBM Plex Mono) instead of Google Fonts; no external runtime requests."
+        - "Accessibility: accessible names for grid cells from their row and column labels, selection state for assistive technology, keyboard-scrollable tables and timelines, contrast of the dashed extension style raised to WCAG 2.1 AA."
+        - "A selected cell can be linked with ?c= and ?n= on the grid pages; without parameters the default is the source default (length 10, no condition selected)."
+        - "One approved deviation from the source drawing: AD-01, below."
+    - id: "ad-01"
+      label: "AD-01: C3 post-review snapshot drawn in the run timeline"
+      items:
+        - "Kind: implementation error in the source timeline script. Not a research decision."
+        - "Approved by the project lead, 13 Nov 2026. The research design does not change."
+        - "Decided rule (unchanged): post-review snapshot after every review (status table, decided 12 Nov); artifact table: post-review snapshot in C0+R, C1+R, C2, C4 (C3 in the extension)."
+        - "Source behaviour: the script drew the review for C3 but no snapshot after it. All other review cells (C0+R, C1+R, C2, C4) got a snapshot after every review."
+        - "Website change: in C3 a snapshot block directly follows each review block (sessions 2 to s), with the same class and the same title as in C2: \"Post-review brief, recorded by a side call before work resumes\". C3 keeps its review, its separate-instance report, its cut labels and its 2s − 1 instances."
+        - "Changed counts (C3): snapshots per run 19 / 7 / 3 / 1 at lengths 2 / 5 / 10 / 20 (source drawing: 0)."
+        - "Text changes: none."
+        - "Not added to the methodological change log, because the rule itself did not change."
+      cost_note_heading: "Cost note (optional extension only)"
+      cost_note:
+        - "The costed figures do not change. C3 is extension only, and the cost model prices the core, the pilot and the pre-runs. The 2,070 core snapshots cover C0+R, C1+R, C2 and C4."
+        - "If the optional extension runs, C3 carries 30 reviews per set of four lengths (19 + 7 + 3 + 1). At 30 runs per cell (the planning value) that is 900 snapshot side calls."
+        - "At the average price of the core snapshots (33 USD with caching and 58 USD without, for 2,070 calls) this comes to about 14 USD with caching and 25 USD without. This is a rough estimate: the C3 reviewer reads a report written by a separate instance plus the brief, comparable to C2, and the actual price depends on the logged context length."
+        - "C3 reviews are not among the reviews that count for the stopping rule (C1+R, C2, C4 and C0+R), so there is no extra snapshot scoring at a first firing."
+        - "The source does not cost the extension as a whole. This note is a website change record; the cost section of the grid is unchanged."
