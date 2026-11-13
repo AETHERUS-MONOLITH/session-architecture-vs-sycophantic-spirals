@@ -1,0 +1,374 @@
+{
+ "base": "/session-architecture-vs-sycophantic-spirals/",
+ "pages": 11,
+ "internal_links": 197,
+ "anchor_links": 18,
+ "external_links": 0,
+ "claude_ai_hrefs": 0,
+ "external_runtime_requests": 0,
+ "anchors_checked": 72,
+ "anchors_ok": 72,
+ "problems": [],
+ "anchors": [
+  {
+   "route": "/",
+   "id": "top",
+   "ok": true
+  },
+  {
+   "route": "/",
+   "id": "tasks-outcomes",
+   "ok": true
+  },
+  {
+   "route": "/",
+   "id": "reference-model",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "top",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "grid",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "conditions",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "runs",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "hypotheses",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "handoff",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "status",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "stopping-rule",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "scoring",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "costs",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "open",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "artifacts",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "instance-state",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "error-path",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "changes",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "tasks-outcomes",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "reference-model",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "h1",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "h2",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "h3",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "h5",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "h4",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "k1",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "k2",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "c2-c1",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "ref",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "test",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "firing",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "reported",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "evaluation-plan",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "fresh-context-review",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "limits",
+   "ok": true
+  },
+  {
+   "route": "/grid/",
+   "id": "grid",
+   "ok": true
+  },
+  {
+   "route": "/grid/",
+   "id": "conditions",
+   "ok": true
+  },
+  {
+   "route": "/grid/",
+   "id": "runs",
+   "ok": true
+  },
+  {
+   "route": "/grid/",
+   "id": "lanes",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "hypotheses",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "h1",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "h2",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "h3",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "h5",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "h4",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "k1",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "k2",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "c2-c1",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "ref",
+   "ok": true
+  },
+  {
+   "route": "/hypotheses/",
+   "id": "test",
+   "ok": true
+  },
+  {
+   "route": "/handoffs/",
+   "id": "handoff",
+   "ok": true
+  },
+  {
+   "route": "/scoring/",
+   "id": "scoring",
+   "ok": true
+  },
+  {
+   "route": "/stopping-rule/",
+   "id": "stopping-rule",
+   "ok": true
+  },
+  {
+   "route": "/stopping-rule/",
+   "id": "firing",
+   "ok": true
+  },
+  {
+   "route": "/stopping-rule/",
+   "id": "reported",
+   "ok": true
+  },
+  {
+   "route": "/stopping-rule/",
+   "id": "evaluation-plan",
+   "ok": true
+  },
+  {
+   "route": "/stopping-rule/",
+   "id": "fresh-context-review",
+   "ok": true
+  },
+  {
+   "route": "/stopping-rule/",
+   "id": "limits",
+   "ok": true
+  },
+  {
+   "route": "/costs/",
+   "id": "costs",
+   "ok": true
+  },
+  {
+   "route": "/decisions/",
+   "id": "status",
+   "ok": true
+  },
+  {
+   "route": "/decisions/",
+   "id": "open",
+   "ok": true
+  },
+  {
+   "route": "/operations/",
+   "id": "artifacts",
+   "ok": true
+  },
+  {
+   "route": "/operations/",
+   "id": "instance-state",
+   "ok": true
+  },
+  {
+   "route": "/operations/",
+   "id": "error-path",
+   "ok": true
+  },
+  {
+   "route": "/changelog/",
+   "id": "changes",
+   "ok": true
+  },
+  {
+   "route": "/changelog/",
+   "id": "versions",
+   "ok": true
+  },
+  {
+   "route": "/changelog/",
+   "id": "site-changes",
+   "ok": true
+  },
+  {
+   "route": "/changelog/",
+   "id": "ad-01",
+   "ok": true
+  },
+  {
+   "route": "/full/",
+   "id": "L1",
+   "ok": true
+  },
+  {
+   "route": "/stopping-rule/#stopping-rule",
+   "id": "L2",
+   "ok": true
+  },
+  {
+   "route": "/costs/#costs",
+   "id": "L3",
+   "ok": true
+  },
+  {
+   "route": "/scoring/#scoring",
+   "id": "L4",
+   "ok": true
+  }
+ ]
+}
