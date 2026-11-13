@@ -9,6 +9,8 @@ This inventory has two layers:
 
 ID scheme: `S00` header; `Snn` section in document order; `-Hk` heading; `-Pk` paragraph; `-Lk-Ij` list item; `-Tk-Rj` table row (`R00` header row); `-Bk` button/control; `-Ak` internal link; `-Xk` text block (diagram nodes, legend chips, grid labels, captions); `-Dk` dynamic or anchor container.
 
+**Addendum F01 (Gate 3, 14 Nov 2026):** the generator walks only `<header>` and `<section>` elements and missed one paragraph outside them, the footer `p.foot` ("Reference model: Chandra, Kleiman-Weiner, Ragan-Kelley & Tenenbaum (2026) …"). It is tracked as F01 in `content/inventory-addendum.json`; the inventory has 376 items in total.
+
 Item counts by kind: table rows 106 + 9 header rows, text blocks 90, list items 76, controls 30, headings 20, paragraphs 16 (+2 header paragraphs), sections 14, links 6 (+1 in the header), 1 eyebrow, 1 h1, 1 dynamic container (`#lanes`), 1 anchor container (`#status`).
 
 ## 1. Sections
