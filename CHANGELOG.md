@@ -2,6 +2,12 @@
 
 Website implementation history. The methodological history of the research design is the grid's own change log, reproduced verbatim on `/changelog/#changes`; it is not repeated or extended here. See `docs/provenance/VERSION_LOG.md` for how the two histories relate.
 
+## Repository changes after the Gate 3 review (21 Nov 2026; site content unchanged, site version stays 0.1.0)
+
+- Provenance: the inventory correction for F01 is now correction C-01 in `docs/provenance/CORRECTIONS.md`, registered with hashes in `docs/provenance/corrections.json`. `docs/provenance/SOURCE_INVENTORY.md` is restored byte for byte to its Gate 1 state. Commit 29d60ba had written the note into that frozen file, and the source-integrity check failed on it (CI run 43530230142).
+- `tools/check-source.mjs` section 3b checks registered corrections separately from the unchanged Gate 1 pins: pinned hashes, registration of every addendum item, equality with the frozen source node, no overlap with Gate 1 items.
+- CI: the build runs first, as its own step; source integrity runs even if the build fails; screenshots run only after a successful build. No check was removed or weakened.
+
 ## 0.1.0 (unreleased; Gate 2 pull request)
 
 Content version: frozen live grid 1794606123-2939 (13 Nov 2026), tag `source-2026-11-13-v1794606123-2939`.

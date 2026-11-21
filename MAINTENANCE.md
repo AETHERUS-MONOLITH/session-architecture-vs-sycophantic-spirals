@@ -29,6 +29,15 @@ A methodological change never enters the site as an engineering change.
 
 The site reproduces the frozen source. A deviation needs the project lead's explicit approval and is recorded in `docs/provenance/APPROVED_DIFFS.md`, `content/approved-diffs.json`, `CHANGELOG.md` and `content/chrome.yml` (`site_changes`, shown on `/changelog/#site-changes`). The parity and golden tests whitelist exactly the recorded entries.
 
+## Corrections after a gate
+
+Gate 1 provenance files are frozen and hash-pinned in `tools/check-source.mjs` (`GATE1`). A finding made later never edits them. Instead:
+
+1. Describe it as the next numbered entry `C-nn` in `docs/provenance/CORRECTIONS.md`: what was found, when, on what basis, which statement it supersedes, what changes on the site.
+2. If it adds source items the inventory generator misses, add them to `content/inventory-addendum.json` with the same ID rules, normalisation and sha16.
+3. Register the entry in `docs/provenance/corrections.json` with the SHA-256 of every file that carries it, the addendum item IDs and the CSS selector of their source node.
+4. `npm run check:source` must pass: the Gate 1 pins stay unchanged, and section 3b checks the registered hashes, that every addendum item is registered once, that it equals its node in the frozen source, and that it is not already a Gate 1 item.
+
 ## Adding a document or a new section
 
 The structure is designed to grow without a rebuild of the architecture:

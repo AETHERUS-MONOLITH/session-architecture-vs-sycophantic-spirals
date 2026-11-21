@@ -35,12 +35,19 @@ jobs:
       - run: npm ci
       - name: Install Playwright browsers (Chromium, WebKit)
         run: npx playwright install --with-deps chromium webkit
-      - name: Source integrity (ticket section 2)
+      # The build runs first and on its own: every later step that serves or reads dist/
+      # depends on it, and a failed check must not leave those steps without a build.
+      - name: Build with the project-path base
+        id: build
+        run: |
+          mkdir -p evidence-ci
+          set -o pipefail
+          npx astro build 2>&1 | tee evidence-ci/build.log
+      - name: Source integrity (ticket section 2; Gate 1 pins and registered corrections)
+        if: always() && steps.build.outcome != 'cancelled'
         run: node tools/check-source.mjs --out evidence-ci
       - name: Unit tests and golden comparison (B1-B11)
         run: npx vitest run 2>&1 | tee evidence-ci/unit-tests.txt
-      - name: Build with the project-path base
-        run: npx astro build 2>&1 | tee evidence-ci/build.log
       - name: Content parity (A1-A6)
         run: node tools/parity.mjs --self-test --out evidence-ci
       - name: Parity negative control (mutations must be detected)
@@ -60,7 +67,7 @@ jobs:
           CI: 'true'
           E2E_JSON: evidence-ci/e2e.json
       - name: Screenshots (GATE1_PLAN section 7 E)
-        if: always()
+        if: always() && steps.build.outcome == 'success'
         run: SCREENSHOTS=1 SCREENSHOT_DIR=evidence-ci/screenshots npx playwright test tests/e2e/screenshots.spec.ts
       - uses: actions/upload-artifact@v4
         if: always()

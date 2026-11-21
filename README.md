@@ -46,7 +46,8 @@ Links in the project document point to `/full/` (L1), `/stopping-rule/` (L2), `/
 archive/        original HTML (byte-identical), frozen HTML, 3 Nov PDFs, MANIFEST.json   (never edited)
 content/        fragments/, conditions.json, chrome.yml, source_inventory.json, mapping.csv,
                 inventory-addendum.json, approved-diffs.json                              (content source)
-docs/provenance/ SOURCE_INVENTORY(.md, _TABLE.md), APPROVED_DIFFS.md, VERSION_LOG.md       (Gate 1 records)
+docs/provenance/ SOURCE_INVENTORY(.md, _TABLE.md), APPROVED_DIFFS.md, VERSION_LOG.md       (Gate 1 records, frozen)
+                CORRECTIONS.md, corrections.json                                         (registered corrections after Gate 1)
 src/            lib/ (timeline, render, controller, content, url), layouts/, components/, pages/, styles/
 public/         fonts/ (with OFL notices), favicon.svg
 tools/          inventory.py, mapping.py, extract-fragments.mjs, vendor-fonts.mjs, original-golden.mjs,
@@ -78,7 +79,7 @@ The site is served under a project path on GitHub Pages. `astro.config.mjs` read
 
 | Command | Checks |
 |---|---|
-| `npm run check:source` | archive hashes against `archive/MANIFEST.json`; `tools/inventory.py` reproduces `content/source_inventory.json`; Gate 1 records unchanged; fragments re-extract identically and equal the source subtrees node by node except the documented attribute additions |
+| `npm run check:source` | archive hashes against `archive/MANIFEST.json`; `tools/inventory.py` reproduces `content/source_inventory.json`; Gate 1 records unchanged; registered post-Gate-1 corrections (`docs/provenance/corrections.json`) pinned and equal to the frozen source; fragments re-extract identically and equal the source subtrees node by node except the documented attribute additions |
 | `npm run test:unit` | B1 to B10 on the timeline model; B11 golden comparison with the original script (8 × 4 states, 26 grid buttons, click sequences); URL state |
 | `npm run test:parity` | A1 to A6: all 375 inventory items (plus 1 addendum item) on their mapped route and on `/full/`, inside their anchors, with identical text; table rows; status-label multisets; no text outside fragments and chrome; change log order; then a negative control that must detect 8 content mutations |
 | `npm run test:links` | D2 to D4: anchors, internal links and fragments, no `claude.ai` in any `href`/`src`, no external runtime requests, served PDFs identical to the archive |

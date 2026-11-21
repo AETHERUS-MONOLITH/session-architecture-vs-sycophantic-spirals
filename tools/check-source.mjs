@@ -6,6 +6,7 @@
 //  4. tools/extract-fragments.mjs is deterministic: re-running it changes no committed file.
 //  5. Every composed fragment equals its source subtree node by node (tags, attributes, text),
 //     except the attribute additions listed in content/fragments/manifest.json.
+//  3b. Authorised corrections after Gate 1 (docs/provenance/corrections.json) are pinned and match the frozen source.
 //  6. The hashes in content/chrome.yml equal archive/MANIFEST.json.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -59,6 +60,41 @@ const GATE1 = {
 for (const [p, h] of Object.entries(GATE1)) check(`Gate 1 file unchanged: ${p}`, sha(fs.readFileSync(path.join(root, p))) === h);
 const mp = spawnSync('python3', ['-I', path.join(root, 'tools/mapping.py'), path.join(root, 'content/source_inventory.json'), path.join(tmp, 'map.csv')], { encoding: 'utf8' });
 check('mapping.py reproduces content/mapping.csv', mp.status === 0 && fs.readFileSync(path.join(tmp, 'map.csv'), 'utf8') === fs.readFileSync(path.join(root, 'content/mapping.csv'), 'utf8'));
+
+// 3b. Authorised corrections after Gate 1 (docs/provenance/corrections.json). The Gate 1 files
+// above stay pinned; a later finding is registered here with its own hashes and checked
+// against the frozen source, so a correction can never pass as an edit of a frozen file.
+const corr = JSON.parse(fs.readFileSync(path.join(root, 'docs/provenance/corrections.json'), 'utf8')).corrections;
+const addendum = JSON.parse(fs.readFileSync(path.join(root, 'content/inventory-addendum.json'), 'utf8')).items;
+for (const c of corr) {
+  for (const f of c.files) {
+    const p = path.join(root, f.path);
+    check(`correction ${c.id} file pinned: ${f.path}`, fs.existsSync(p) && sha(fs.readFileSync(p)) === f.sha256);
+  }
+}
+const registered = corr.flatMap((c) => c.addendum_items.map((id) => ({ id, selector: c.source_selector, cid: c.id })));
+check('every addendum item is registered in exactly one correction, and every registered item exists',
+  addendum.every((it) => registered.filter((r) => r.id === it.id).length === 1) && registered.every((r) => addendum.some((it) => it.id === r.id)),
+  `${addendum.length} addendum item(s), ${registered.length} registered`);
+{
+  // Same normalisation as tools/inventory.py (BeautifulSoup get_text(' '), whitespace collapsed, sha16).
+  const pyCode = [
+    'import sys, json, re, hashlib',
+    'from bs4 import BeautifulSoup',
+    'src, sel = sys.argv[1], sys.argv[2]',
+    'el = BeautifulSoup(open(src, encoding="utf-8").read(), "html.parser").select_one(sel)',
+    't = re.sub(r"\\s+", " ", el.get_text(" ")).strip() if el else None',
+    'print(json.dumps({"text": t, "sha16": hashlib.sha256(t.encode()).hexdigest()[:16] if t else None}))',
+  ].join('\n');
+  const gate1Shas = new Set(JSON.parse(fs.readFileSync(path.join(root, 'content/source_inventory.json'), 'utf8')).items.map((i) => i.sha16));
+  for (const r of registered) {
+    const it = addendum.find((a) => a.id === r.id);
+    const out = spawnSync('python3', ['-I', '-c', pyCode, path.join(root, FROZEN), r.selector], { encoding: 'utf8' });
+    const got = out.status === 0 ? JSON.parse(out.stdout) : { text: null };
+    check(`addendum ${r.id} (${r.cid}) equals the frozen source node ${r.selector}`, !!it && got.text === it.text && got.sha16 === it.sha16, it ? it.sha16 : 'missing');
+    check(`addendum ${r.id} is not already a Gate 1 inventory item`, !!it && !gate1Shas.has(it.sha16));
+  }
+}
 
 // 4
 const generated = [...fs.readdirSync(path.join(root, 'content/fragments')).map((f) => `content/fragments/${f}`), 'content/conditions.json', 'src/styles/source.css'];
