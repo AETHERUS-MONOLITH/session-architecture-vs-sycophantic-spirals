@@ -1,0 +1,433 @@
+{
+ "meta": {
+  "source": "archive/frozen/session-architecture-grid_live_2026-11-13_v1794606123-2939.html",
+  "source_sha256": "f35025bb3cbbd6379a0f3702728601ccc07c3e291fb7e9fdd502b8997aed30d0",
+  "generator": "tools/original-golden.mjs",
+  "jsdom": "31.0.1"
+ },
+ "buttons": [
+  "g-C0",
+  "g-C0R",
+  "g-C1-2",
+  "g-C1-5",
+  "g-C1-10",
+  "g-C1-20",
+  "g-C1R-2",
+  "g-C1R-5",
+  "g-C1R-10",
+  "g-C1R-20",
+  "g-C2-2",
+  "g-C2-5",
+  "g-C2-10",
+  "g-C2-20",
+  "g-C2X-2",
+  "g-C2X-5",
+  "g-C2X-10",
+  "g-C2X-20",
+  "g-C3-2",
+  "g-C3-5",
+  "g-C3-10",
+  "g-C3-20",
+  "g-C4-2",
+  "g-C4-5",
+  "g-C4-10",
+  "g-C4-20"
+ ],
+ "selection": {
+  "g-C0": {
+   "pressed": [
+    "len-10"
+   ],
+   "selectedCells": [
+    "g-C0"
+   ],
+   "selectedLanes": [
+    0
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C0R": {
+   "pressed": [
+    "len-10"
+   ],
+   "selectedCells": [
+    "g-C0R"
+   ],
+   "selectedLanes": [
+    1
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C1-2": {
+   "pressed": [
+    "len-2"
+   ],
+   "selectedCells": [
+    "g-C1-2"
+   ],
+   "selectedLanes": [
+    2
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C1-5": {
+   "pressed": [
+    "len-5"
+   ],
+   "selectedCells": [
+    "g-C1-5"
+   ],
+   "selectedLanes": [
+    2
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C1-10": {
+   "pressed": [
+    "len-10"
+   ],
+   "selectedCells": [
+    "g-C1-10"
+   ],
+   "selectedLanes": [
+    2
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C1-20": {
+   "pressed": [
+    "len-20"
+   ],
+   "selectedCells": [
+    "g-C1-20"
+   ],
+   "selectedLanes": [
+    2
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C1R-2": {
+   "pressed": [
+    "len-2"
+   ],
+   "selectedCells": [
+    "g-C1R-2"
+   ],
+   "selectedLanes": [
+    3
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C1R-5": {
+   "pressed": [
+    "len-5"
+   ],
+   "selectedCells": [
+    "g-C1R-5"
+   ],
+   "selectedLanes": [
+    3
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C1R-10": {
+   "pressed": [
+    "len-10"
+   ],
+   "selectedCells": [
+    "g-C1R-10"
+   ],
+   "selectedLanes": [
+    3
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C1R-20": {
+   "pressed": [
+    "len-20"
+   ],
+   "selectedCells": [
+    "g-C1R-20"
+   ],
+   "selectedLanes": [
+    3
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C2-2": {
+   "pressed": [
+    "len-2"
+   ],
+   "selectedCells": [
+    "g-C2-2"
+   ],
+   "selectedLanes": [
+    4
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C2-5": {
+   "pressed": [
+    "len-5"
+   ],
+   "selectedCells": [
+    "g-C2-5"
+   ],
+   "selectedLanes": [
+    4
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C2-10": {
+   "pressed": [
+    "len-10"
+   ],
+   "selectedCells": [
+    "g-C2-10"
+   ],
+   "selectedLanes": [
+    4
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C2-20": {
+   "pressed": [
+    "len-20"
+   ],
+   "selectedCells": [
+    "g-C2-20"
+   ],
+   "selectedLanes": [
+    4
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C2X-2": {
+   "pressed": [
+    "len-2"
+   ],
+   "selectedCells": [
+    "g-C2X-2"
+   ],
+   "selectedLanes": [
+    5
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C2X-5": {
+   "pressed": [
+    "len-5"
+   ],
+   "selectedCells": [
+    "g-C2X-5"
+   ],
+   "selectedLanes": [
+    5
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C2X-10": {
+   "pressed": [
+    "len-10"
+   ],
+   "selectedCells": [
+    "g-C2X-10"
+   ],
+   "selectedLanes": [
+    5
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C2X-20": {
+   "pressed": [
+    "len-20"
+   ],
+   "selectedCells": [
+    "g-C2X-20"
+   ],
+   "selectedLanes": [
+    5
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C3-2": {
+   "pressed": [
+    "len-2"
+   ],
+   "selectedCells": [
+    "g-C3-2"
+   ],
+   "selectedLanes": [
+    6
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C3-5": {
+   "pressed": [
+    "len-5"
+   ],
+   "selectedCells": [
+    "g-C3-5"
+   ],
+   "selectedLanes": [
+    6
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C3-10": {
+   "pressed": [
+    "len-10"
+   ],
+   "selectedCells": [
+    "g-C3-10"
+   ],
+   "selectedLanes": [
+    6
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C3-20": {
+   "pressed": [
+    "len-20"
+   ],
+   "selectedCells": [
+    "g-C3-20"
+   ],
+   "selectedLanes": [
+    6
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C4-2": {
+   "pressed": [
+    "len-2"
+   ],
+   "selectedCells": [
+    "g-C4-2"
+   ],
+   "selectedLanes": [
+    7
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C4-5": {
+   "pressed": [
+    "len-5"
+   ],
+   "selectedCells": [
+    "g-C4-5"
+   ],
+   "selectedLanes": [
+    7
+   ],
+   "lanesClass": "lanes dense"
+  },
+  "g-C4-10": {
+   "pressed": [
+    "len-10"
+   ],
+   "selectedCells": [
+    "g-C4-10"
+   ],
+   "selectedLanes": [
+    7
+   ],
+   "lanesClass": "lanes"
+  },
+  "g-C4-20": {
+   "pressed": [
+    "len-20"
+   ],
+   "selectedCells": [
+    "g-C4-20"
+   ],
+   "selectedLanes": [
+    7
+   ],
+   "lanesClass": "lanes"
+  }
+ },
+ "sequences": [
+  {
+   "steps": [
+    "g-C1-2",
+    "g-C0"
+   ],
+   "pressed": [
+    "len-2"
+   ],
+   "selectedCells": [
+    "g-C0"
+   ],
+   "selectedLanes": [
+    0
+   ],
+   "lanesClass": "lanes dense"
+  },
+  {
+   "steps": [
+    "g-C4-20",
+    "g-C0R"
+   ],
+   "pressed": [
+    "len-20"
+   ],
+   "selectedCells": [
+    "g-C0R"
+   ],
+   "selectedLanes": [
+    1
+   ],
+   "lanesClass": "lanes"
+  },
+  {
+   "steps": [
+    "g-C2-10",
+    "len-5"
+   ],
+   "pressed": [
+    "len-5"
+   ],
+   "selectedCells": [
+    "g-C2-5"
+   ],
+   "selectedLanes": [
+    4
+   ],
+   "lanesClass": "lanes dense"
+  },
+  {
+   "steps": [
+    "g-C0",
+    "len-20"
+   ],
+   "pressed": [
+    "len-20"
+   ],
+   "selectedCells": [
+    "g-C0"
+   ],
+   "selectedLanes": [
+    0
+   ],
+   "lanesClass": "lanes"
+  },
+  {
+   "steps": [
+    "g-C3-5",
+    "len-2",
+    "g-C2X-20"
+   ],
+   "pressed": [
+    "len-20"
+   ],
+   "selectedCells": [
+    "g-C2X-20"
+   ],
+   "selectedLanes": [
+    5
+   ],
+   "lanesClass": "lanes"
+  }
+ ]
+}

@@ -7,3 +7,5 @@ coverage/
 *.log
 .DS_Store
 public/archive/
+dist-alt/
+evidence-ci/

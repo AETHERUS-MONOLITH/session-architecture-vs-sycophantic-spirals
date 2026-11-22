@@ -1,0 +1,21 @@
+PASS  archive archive/original/Session Architecture Grid (1).html — 7f1dfd9dca40…, 90012 bytes
+PASS  archive archive/frozen/session-architecture-grid_live_2026-11-13_v1794606123-2939.html — f35025bb3cbb…, 90792 bytes
+PASS  archive archive/historical/2026-11-03/Session_Architecture_Grid_2026-11-03.pdf — 20ae2ef3b2c4…, 713532 bytes
+PASS  archive archive/historical/2026-11-03/API_cost_estimate_2026-11-03.pdf — 1ff3069439c7…, 102166 bytes
+PASS  original HTML has the contract hash
+PASS  inventory.py reproduces content/source_inventory.json — 375 items
+PASS  inventory.py reproduces SOURCE_INVENTORY_TABLE.md
+PASS  Gate 1 file unchanged: content/source_inventory.json
+PASS  Gate 1 file unchanged: content/mapping.csv
+PASS  Gate 1 file unchanged: docs/provenance/SOURCE_INVENTORY.md
+PASS  Gate 1 file unchanged: docs/provenance/SOURCE_INVENTORY_TABLE.md
+PASS  Gate 1 file unchanged: docs/provenance/APPROVED_DIFFS.md
+PASS  Gate 1 file unchanged: docs/provenance/VERSION_LOG.md
+PASS  Gate 1 file unchanged: tools/inventory.py
+PASS  Gate 1 file unchanged: tools/mapping.py
+PASS  mapping.py reproduces content/mapping.csv
+PASS  extract-fragments.mjs reproduces the committed fragments, conditions.json and source.css
+PASS  composed fragments equal the source subtrees (tags, attributes, every text node), except the documented attribute additions — 18/18 identical; 74 attribute additions documented
+PASS  text nodes copied (sections S01–S14) — 1124 text nodes
+PASS  chrome.yml version hashes equal archive/MANIFEST.json — 4 files
+all 20 checks passed

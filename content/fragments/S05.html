@@ -1,0 +1,22 @@
+<section class="panel" id="handoff">
+    <h2>One handoff, step by step</h2>
+    <div class="flow">
+      <div class="st"><span class="n">instance 1 · active work</span><b>Working session</b><p>N turn pairs between simulated user and model. The pipeline stops it after exactly N, not when the context window is full.</p><div class="chips"><span class="chip">C1</span><span class="chip">C1+R</span><span class="chip">C2</span><span class="chip">C3</span><span class="chip">C4</span></div></div>
+      <div class="st"><span class="n">instance 1 · reporting</span><b>Summary or report</b><p>Written by the same instance, still with its full context. C1, C1+R: free summary. C2, C4: structured template. C3: skipped here, see below. The instance also writes out the current version of the brief.</p><div class="chips"><span class="chip">C1</span><span class="chip">C1+R</span><span class="chip">C2</span><span class="chip">C4</span></div></div>
+      <div class="st c"><span class="n">transition · cut</span><b>Instance ends</b><p>The context is cleared. Only the handed-over documents reach the next instance: the current brief plus the summary or report.</p><div class="chips"><span class="chip">C1</span><span class="chip">C1+R</span><span class="chip">C2</span><span class="chip">C3</span><span class="chip">C4</span></div></div>
+      <div class="st"><span class="n">instance 2 · review</span><b>Review first</b><p>The next working instance starts with the mandate "review, then continue". It reviews the handed-over report or summary and the current brief, writes a review record and may revise both before any new work. One review covers the state at the handover, not single replies. In C4 it is the other model family. Right after the review a side call asks this instance to write out the brief as it now holds it; the answer is logged and does not enter the conversation (post-review snapshot, decided 12 Nov). This is a fresh-context review: the reviewer lacks the previous session's context, but it continues the work itself.</p><div class="chips"><span class="chip">C1+R</span><span class="chip">C2</span><span class="chip">C3</span><span class="chip">C4</span></div></div>
+      <div class="st"><span class="n">instance 2 · decision</span><b>Resume or score</b><p>Budget left: the same instance continues working. Budget used up: the final brief is scored by the calibrated judge (see <a href="#scoring">Scoring</a>).</p><div class="chips"><span class="chip">all</span></div></div>
+    </div>
+    <div class="crosses">
+      <div><strong>C1 compared with C2</strong>C2 changes two things at once: the summary becomes a structured template, and the next instance gets a review mandate. C1+R (decided 3 Nov) splits the difference into K1 (review) and K2 (format under review). Whether the format helps without review is not measured.</div>
+      <div><strong>C3: separate report author</strong>Instance 1 ends without writing anything. A separate instance reads the full transcript, writes the report and ends. Then instance 2 starts with review, as in C2.</div>
+    </div>
+    <ul class="variants">
+      <li><span class="tag">C0</span><span>No cut, no report: work continues until the budget ends, then scoring.</span></li>
+      <li><span class="tag">C0+R</span><span>As C0, plus a review step after turns 10, 20 and 30 inside the same context, each followed by a post-review snapshot. Same-context contrast for the review.</span></li>
+      <li><span class="tag">C1</span><span>Free summary written before the cut, then a new instance continues with the mandate "continue". No template, no review.</span></li>
+      <li><span class="tag">C1+R</span><span>Free summary before the cut; the new instance gets summary and current brief with the mandate "review, then continue", writes a review record and may revise both.</span></li>
+      <li><span class="tag x">C2−R</span><span>Optional. Structured report before the cut; the new instance continues with "continue", no review.</span></li>
+    </ul>
+    <!--fragment:S05-status-->
+  </section>

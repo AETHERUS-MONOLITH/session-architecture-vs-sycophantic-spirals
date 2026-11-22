@@ -1,0 +1,29 @@
+{
+  "note": "Approved deviations of the website from the frozen source (content version 1794606123-2939). Record of reference: docs/provenance/APPROVED_DIFFS.md. tools/parity.mjs and tests/unit/golden.test.ts whitelist exactly these entries.",
+  "content_version": "1794606123-2939",
+  "diffs": [
+    {
+      "id": "AD-01",
+      "title": "C3 post-review snapshot drawn in the run timeline",
+      "kind": "implementation error in the source timeline script; not a research decision",
+      "approved_by": "project lead",
+      "approved_on": "2026-11-13",
+      "decided_rule_items": ["S05-T01-R40", "S10-T01-R11", "S06-L03-I04", "S03-X10"],
+      "scope": "timeline drawing only (dynamic #lanes container S03-D01); no inventory text item changes",
+      "change": "In C3, a block with class 'b snap', flex weight 0.3 and title 'Post-review brief, recorded by a side call before work resumes' directly follows each review block of sessions 2..s.",
+      "dom_marker": "data-approved-diff=\"AD-01\"",
+      "expected_snapshots_c3": { "2": 19, "5": 7, "10": 3, "20": 1 },
+      "source_snapshots_c3": { "2": 0, "5": 0, "10": 0, "20": 0 },
+      "text_changes": [],
+      "methodological_change_log": "not added (the rule itself did not change)",
+      "cost_note": {
+        "costed_figures_change": false,
+        "extension_snapshot_calls_at_30_runs": 900,
+        "rough_usd_with_caching": 14,
+        "rough_usd_without_caching": 25,
+        "basis": "average price of the 2,070 core snapshots (33 USD with caching, 58 USD without)"
+      },
+      "documented_at": ["docs/provenance/APPROVED_DIFFS.md", "CHANGELOG.md", "/changelog/#site-changes", "content/chrome.yml site_changes.ad-01"]
+    }
+  ]
+}

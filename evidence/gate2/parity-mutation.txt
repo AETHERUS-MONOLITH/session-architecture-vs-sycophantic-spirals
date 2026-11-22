@@ -1,0 +1,9 @@
+detected  one word changed in a cost cell: parity: 376 items; on route 375, on /full/ 376; A2 18/18; A3 4/4; A4 stray 0; A5 2/2; unapproved differences: 1
+detected  status label changed: parity: 376 items; on route 375, on /full/ 376; A2 18/18; A3 3/4; A4 stray 0; A5 2/2; unapproved differences: 2
+detected  qualifier deleted in H1: parity: 376 items; on route 375, on /full/ 376; A2 18/18; A3 4/4; A4 stray 0; A5 2/2; unapproved differences: 1
+detected  change-log entry removed: parity: 376 items; on route 375, on /full/ 376; A2 18/18; A3 4/4; A4 stray 0; A5 1/2; unapproved differences: 2
+detected  stray text added outside fragments: parity: 376 items; on route 376, on /full/ 376; A2 18/18; A3 4/4; A4 stray 1; A5 2/2; unapproved differences: 1
+detected  internal link retargeted: parity: 376 items; on route 375, on /full/ 376; A2 18/18; A3 4/4; A4 stray 0; A5 2/2; unapproved differences: 1
+detected  grid button id changed: parity: 376 items; on route 375, on /full/ 376; A2 18/18; A3 4/4; A4 stray 0; A5 2/2; unapproved differences: 1
+detected  table row removed: parity: 376 items; on route 375, on /full/ 376; A2 17/18; A3 4/4; A4 stray 0; A5 2/2; unapproved differences: 2
+all 8 mutations detected

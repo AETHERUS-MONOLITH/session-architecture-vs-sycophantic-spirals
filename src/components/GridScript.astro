@@ -1,0 +1,9 @@
+---
+// Client script for the factorial grid and run timelines.
+---
+<script>
+  import conditions from '../../content/conditions.json';
+  import { initGrid } from '../lib/controller';
+  import type { Conditions } from '../lib/timeline';
+  initGrid(window, conditions as Conditions);
+</script>

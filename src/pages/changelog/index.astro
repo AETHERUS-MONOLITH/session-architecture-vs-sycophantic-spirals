@@ -1,0 +1,51 @@
+---
+// S13 verbatim (methodological history), then the versions and the website changes (site chrome),
+// kept apart from the methodological change log.
+import Base from '../../layouts/Base.astro';
+import Frag from '../../components/Frag.astro';
+import { chrome } from '../../lib/content';
+import { url } from '../../lib/url';
+const v = chrome.versions;
+const sc = chrome.site_changes;
+---
+<Base path="/changelog/">
+  <Frag name="S13" mode="topic" />
+  <section class="panel" id="versions" aria-labelledby="versions-heading">
+    <h2 id="versions-heading">{v.heading}</h2>
+    <p class="hint">{v.intro}</p>
+    <ol class="versions">
+      {v.entries.map((e) => (
+        <li id={e.id}>
+          <strong>{e.label}</strong>
+          <p class="hint">{e.status}</p>
+          <ul class="files">
+            {e.files.map((f) => (
+              <li>
+                {f.href ? <a href={url(f.href)}>{f.text}</a> : <span class="k">{v.archived_as_label}</span>}
+                <code>{f.path}</code>
+                <span class="k">{v.sha_label}</span>
+                <code class="hash">{f.sha256}</code>
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </ol>
+  </section>
+  <section class="panel" id="site-changes" aria-labelledby="site-changes-heading">
+    <h2 id="site-changes-heading">{sc.heading}</h2>
+    <p class="hint">{sc.intro}</p>
+    {sc.entries.map((e) => (
+      <article class="site-change" id={e.id} aria-labelledby={e.id + '-label'}>
+        <h3 id={e.id + '-label'}>{e.label}</h3>
+        <ul class="notes">{e.items.map((t) => <li>{t}</li>)}</ul>
+        {e.cost_note && (
+          <>
+            <h4>{e.cost_note_heading}</h4>
+            <ul class="notes">{e.cost_note.map((t) => <li>{t}</li>)}</ul>
+          </>
+        )}
+      </article>
+    ))}
+  </section>
+</Base>

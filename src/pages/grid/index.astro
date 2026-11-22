@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import Frag from '../../components/Frag.astro';
+import GridScript from '../../components/GridScript.astro';
+---
+<Base path="/grid/">
+  <div class="main">
+    <Frag name="S01" mode="topic" />
+    <Frag name="S02" mode="topic" />
+  </div>
+  <Frag name="S03" mode="topic" />
+  <GridScript />
+</Base>

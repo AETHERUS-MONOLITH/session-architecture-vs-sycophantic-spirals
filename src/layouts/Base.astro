@@ -1,0 +1,59 @@
+---
+// Page shell: skip link, site header with primary (topical) and secondary (/full/) navigation,
+// status banner, main content, footer with content and site version. All text comes from content/chrome.yml.
+import '../styles/source.css';
+import '../styles/site.css';
+import { chrome, routeByPath } from '../lib/content';
+import { url } from '../lib/url';
+
+interface Props { path: string; heading?: boolean }
+const { path, heading = true } = Astro.props;
+const route = routeByPath(path);
+const s = chrome.site;
+const docTitle = path === '/' ? s.brand : route.title + s.title_separator + s.brand;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{docTitle}</title>
+    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <link rel="stylesheet" href={url('/fonts/fonts.css')} />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">{s.skip_link}</a>
+    <header class="site-head">
+      <div class="site-head-inner">
+        <a class="brand" href={url('/')}>{s.brand}</a>
+        <nav class="site-nav" aria-label={s.nav_primary_label}>
+          <ul>
+            {chrome.routes.map((r) => (
+              <li><a href={url(r.path)} aria-current={r.path === path ? 'page' : undefined}>{r.nav}</a></li>
+            ))}
+          </ul>
+        </nav>
+        <nav class="site-nav secondary" aria-label={s.nav_secondary_label}>
+          <ul>
+            {chrome.secondary_routes.map((r) => (
+              <li><a href={url(r.path)} aria-current={r.path === path ? 'page' : undefined}>{r.nav}</a></li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+      <p class="status-banner" data-status-banner>{s.banner}</p>
+    </header>
+    <main id="content" class="wrap" tabindex="-1">
+      {heading && <h1 class="page-title">{route.title}</h1>}
+      <slot />
+    </main>
+    <footer class="site-foot">
+      <div class="site-foot-inner" aria-label={s.footer_label} role="group">
+        <span><span class="k">{s.footer_content_version_label}</span> <span data-content-version>{s.footer_content_version}</span></span>
+        <span><span class="k">{s.footer_site_version_label}</span> <span data-site-version>{s.footer_site_version}</span></span>
+        <a href={url('/changelog/#versions')}>{s.footer_versions_link}</a>
+      </div>
+    </footer>
+  </body>
+</html>

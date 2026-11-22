@@ -1,0 +1,9 @@
+---
+// S05 without the status table, which lives on /decisions/#status. The status legend paragraph
+// (S05-P06) stays here as well, as SOURCE_TO_SITE_MAPPING.csv maps it to /handoffs/.
+import Base from '../../layouts/Base.astro';
+import Frag from '../../components/Frag.astro';
+---
+<Base path="/handoffs/">
+  <Frag name="S05" mode="topic" replace={{ 'S05-status': 'S05-status-legend' }} />
+</Base>

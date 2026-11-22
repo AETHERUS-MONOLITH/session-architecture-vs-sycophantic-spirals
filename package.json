@@ -1,0 +1,39 @@
+{
+  "name": "session-architecture-vs-sycophantic-spirals",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Documentation website for the AISC 12 project Session Architecture vs. Sycophantic Spirals",
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "extract": "node tools/extract-fragments.mjs",
+    "fonts": "node tools/vendor-fonts.mjs",
+    "golden:fixtures": "node tools/original-golden.mjs",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview --ignore-lock",
+    "check:source": "node tools/check-source.mjs",
+    "test:unit": "vitest run",
+    "test:parity": "node tools/parity.mjs --self-test && node tools/parity-mutation.mjs",
+    "test:links": "node tools/linkcheck.mjs",
+    "test:contrast": "node tools/contrast.mjs",
+    "test:base": "SITE_BASE=/alt-base/ astro build --outDir dist-alt && SITE_BASE=/alt-base/ node tools/parity.mjs --dist dist-alt --out dist-alt/_report && SITE_BASE=/alt-base/ node tools/linkcheck.mjs --dist dist-alt",
+    "test:e2e": "playwright test",
+    "screenshots": "SCREENSHOTS=1 playwright test tests/e2e/screenshots.spec.ts",
+    "smoke": "node tools/smoke.mjs",
+    "test": "npm run check:source && npm run test:unit && npm run build && npm run test:parity && npm run test:links && npm run test:contrast && npm run test:base && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@fontsource-variable/newsreader": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@playwright/test": "^1.65.1",
+    "astro": "^7.4.12",
+    "js-yaml": "^5.5.0",
+    "jsdom": "^31.0.1",
+    "vitest": "^5.1.0"
+  }
+}

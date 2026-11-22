@@ -1,0 +1,8 @@
+---
+// Inserts one composed content fragment. The HTML is the verbatim DOM copy from the frozen source.
+import { compose, type ComposeOptions } from '../lib/content';
+interface Props { name: string; mode: ComposeOptions['mode']; replace?: ComposeOptions['replace'] }
+const { name, mode, replace } = Astro.props;
+const html = compose(name, { mode, replace });
+---
+<Fragment set:html={html} />

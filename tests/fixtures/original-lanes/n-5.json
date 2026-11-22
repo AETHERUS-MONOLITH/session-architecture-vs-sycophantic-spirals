@@ -1,0 +1,4238 @@
+{
+ "meta": {
+  "source": "archive/frozen/session-architecture-grid_live_2026-11-13_v1794606123-2939.html",
+  "source_sha256": "f35025bb3cbbd6379a0f3702728601ccc07c3e291fb7e9fdd502b8997aed30d0",
+  "generator": "tools/original-golden.mjs",
+  "jsdom": "31.0.1"
+ },
+ "n": 5,
+ "state": {
+  "lanesClass": "lanes dense",
+  "lanes": [
+   {
+    "t": "div",
+    "a": {
+     "class": "lane"
+    },
+    "c": [
+     {
+      "t": "div",
+      "a": {
+       "class": "rowlab"
+      },
+      "c": [
+       {
+        "t": "b",
+        "a": {},
+        "c": [
+         "C0"
+        ]
+       },
+       {
+        "t": "span",
+        "a": {},
+        "c": [
+         "Continuous"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "track"
+      },
+      "c": [
+       {
+        "t": "div",
+        "a": {
+         "class": "b v0",
+         "title": "Brief V0 with planted items: start input of every cell"
+        },
+        "c": [
+         "V0"
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "40 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "One continuous session",
+           "flex": "40 1 0px"
+          },
+          "c": [
+           "40 turns"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "b score",
+         "title": "Final brief scored by the calibrated judge"
+        },
+        "c": [
+         "score"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "meta"
+      },
+      "c": [
+       "1 session",
+       {
+        "t": "br",
+        "a": {},
+        "c": []
+       },
+       "1 instance"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "div",
+    "a": {
+     "class": "lane"
+    },
+    "c": [
+     {
+      "t": "div",
+      "a": {
+       "class": "rowlab"
+      },
+      "c": [
+       {
+        "t": "b",
+        "a": {},
+        "c": [
+         "C0+R"
+        ]
+       },
+       {
+        "t": "span",
+        "a": {},
+        "c": [
+         "Continuous + review"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "track"
+      },
+      "c": [
+       {
+        "t": "div",
+        "a": {
+         "class": "b v0",
+         "title": "Brief V0 with planted items: start input of every cell"
+        },
+        "c": [
+         "V0"
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "45.7 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Turns 1 to 10",
+           "flex": "10 1 0px"
+          },
+          "c": [
+           "10 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review step inside the same context, after turn 10",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call after the review at turn 10",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Turns 11 to 20",
+           "flex": "10 1 0px"
+          },
+          "c": [
+           "10 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review step inside the same context, after turn 20",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call after the review at turn 20",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Turns 21 to 30",
+           "flex": "10 1 0px"
+          },
+          "c": [
+           "10 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review step inside the same context, after turn 30",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call after the review at turn 30",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Turns 31 to 40",
+           "flex": "10 1 0px"
+          },
+          "c": [
+           "10 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "b score",
+         "title": "Final brief scored by the calibrated judge"
+        },
+        "c": [
+         "score"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "meta"
+      },
+      "c": [
+       "1 session",
+       {
+        "t": "br",
+        "a": {},
+        "c": []
+       },
+       "3 reviews"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "div",
+    "a": {
+     "class": "lane"
+    },
+    "c": [
+     {
+      "t": "div",
+      "a": {
+       "class": "rowlab"
+      },
+      "c": [
+       {
+        "t": "b",
+        "a": {},
+        "c": [
+         "C1"
+        ]
+       },
+       {
+        "t": "span",
+        "a": {},
+        "c": [
+         "Self-summary · ext."
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "track"
+      },
+      "c": [
+       {
+        "t": "div",
+        "a": {
+         "class": "b v0",
+         "title": "Brief V0 with planted items: start input of every cell"
+        },
+        "c": [
+         "V0"
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 1: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 2: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 3: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 4: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 5: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 6: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 7: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 8: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "b score",
+         "title": "Final brief scored by the calibrated judge"
+        },
+        "c": [
+         "score"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "meta"
+      },
+      "c": [
+       "8 sessions",
+       {
+        "t": "br",
+        "a": {},
+        "c": []
+       },
+       "8 instances"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "div",
+    "a": {
+     "class": "lane"
+    },
+    "c": [
+     {
+      "t": "div",
+      "a": {
+       "class": "rowlab"
+      },
+      "c": [
+       {
+        "t": "b",
+        "a": {},
+        "c": [
+         "C1+R"
+        ]
+       },
+       {
+        "t": "span",
+        "a": {},
+        "c": [
+         "Self-summary + review · ext."
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "track"
+      },
+      "c": [
+       {
+        "t": "div",
+        "a": {
+         "class": "b v0",
+         "title": "Brief V0 with planted items: start input of every cell"
+        },
+        "c": [
+         "V0"
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 1: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 2: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 3: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 4: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 5: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 6: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 7: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b sum",
+           "title": "Free summary, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "S"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: summary + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "summary + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.9 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 8: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "b score",
+         "title": "Final brief scored by the calibrated judge"
+        },
+        "c": [
+         "score"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "meta"
+      },
+      "c": [
+       "8 sessions",
+       {
+        "t": "br",
+        "a": {},
+        "c": []
+       },
+       "8 instances"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "div",
+    "a": {
+     "class": "lane"
+    },
+    "c": [
+     {
+      "t": "div",
+      "a": {
+       "class": "rowlab"
+      },
+      "c": [
+       {
+        "t": "b",
+        "a": {},
+        "c": [
+         "C2"
+        ]
+       },
+       {
+        "t": "span",
+        "a": {},
+        "c": [
+         "Fresh review · ext."
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "track"
+      },
+      "c": [
+       {
+        "t": "div",
+        "a": {
+         "class": "b v0",
+         "title": "Brief V0 with planted items: start input of every cell"
+        },
+        "c": [
+         "V0"
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 1: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 2: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 3: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 4: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 5: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 6: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 7: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.9 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 8: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "b score",
+         "title": "Final brief scored by the calibrated judge"
+        },
+        "c": [
+         "score"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "meta"
+      },
+      "c": [
+       "8 sessions",
+       {
+        "t": "br",
+        "a": {},
+        "c": []
+       },
+       "8 instances"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "div",
+    "a": {
+     "class": "lane"
+    },
+    "c": [
+     {
+      "t": "div",
+      "a": {
+       "class": "rowlab"
+      },
+      "c": [
+       {
+        "t": "b",
+        "a": {},
+        "c": [
+         "C2−R"
+        ]
+       },
+       {
+        "t": "span",
+        "a": {},
+        "c": [
+         "Report, no review · opt."
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "track"
+      },
+      "c": [
+       {
+        "t": "div",
+        "a": {
+         "class": "b v0",
+         "title": "Brief V0 with planted items: start input of every cell"
+        },
+        "c": [
+         "V0"
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 1: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 2: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 3: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 4: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 5: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 6: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 7: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 8: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "b score",
+         "title": "Final brief scored by the calibrated judge"
+        },
+        "c": [
+         "score"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "meta"
+      },
+      "c": [
+       "8 sessions",
+       {
+        "t": "br",
+        "a": {},
+        "c": []
+       },
+       "8 instances"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "div",
+    "a": {
+     "class": "lane"
+    },
+    "c": [
+     {
+      "t": "div",
+      "a": {
+       "class": "rowlab"
+      },
+      "c": [
+       {
+        "t": "b",
+        "a": {},
+        "c": [
+         "C3"
+        ]
+       },
+       {
+        "t": "span",
+        "a": {},
+        "c": [
+         "Independent report · ext."
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "track"
+      },
+      "c": [
+       {
+        "t": "div",
+        "a": {
+         "class": "b v0",
+         "title": "Brief V0 with planted items: start input of every cell"
+        },
+        "c": [
+         "V0"
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 1: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: transcript"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "transcript",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst ind",
+         "flex": "1.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep ind",
+           "title": "Separate instance writes the report from the transcript",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 2: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: transcript"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "transcript",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst ind",
+         "flex": "1.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep ind",
+           "title": "Separate instance writes the report from the transcript",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 3: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: transcript"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "transcript",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst ind",
+         "flex": "1.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep ind",
+           "title": "Separate instance writes the report from the transcript",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 4: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: transcript"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "transcript",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst ind",
+         "flex": "1.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep ind",
+           "title": "Separate instance writes the report from the transcript",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 5: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: transcript"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "transcript",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst ind",
+         "flex": "1.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep ind",
+           "title": "Separate instance writes the report from the transcript",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 6: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: transcript"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "transcript",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst ind",
+         "flex": "1.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep ind",
+           "title": "Separate instance writes the report from the transcript",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 7: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: transcript"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "transcript",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst ind",
+         "flex": "1.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep ind",
+           "title": "Separate instance writes the report from the transcript",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 8: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "b score",
+         "title": "Final brief scored by the calibrated judge"
+        },
+        "c": [
+         "score"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "meta"
+      },
+      "c": [
+       "8 sessions",
+       {
+        "t": "br",
+        "a": {},
+        "c": []
+       },
+       "15 instances"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "div",
+    "a": {
+     "class": "lane"
+    },
+    "c": [
+     {
+      "t": "div",
+      "a": {
+       "class": "rowlab"
+      },
+      "c": [
+       {
+        "t": "b",
+        "a": {},
+        "c": [
+         "C4"
+        ]
+       },
+       {
+        "t": "span",
+        "a": {},
+        "c": [
+         "Cross-model · ext."
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "track"
+      },
+      "c": [
+       {
+        "t": "div",
+        "a": {
+         "class": "b v0",
+         "title": "Brief V0 with planted items: start input of every cell"
+        },
+        "c": [
+         "V0"
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "6.6 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 1: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst mb",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev mb",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap mb",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work mb",
+           "title": "Session 2: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 3: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst mb",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev mb",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap mb",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work mb",
+           "title": "Session 4: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 5: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst mb",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev mb",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap mb",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work mb",
+           "title": "Session 6: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst",
+         "flex": "8.5 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work",
+           "title": "Session 7: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b rep",
+           "title": "Structured report, written by this instance before it ends",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "R"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "hand",
+         "title": "Cut: instance ends. Handed over: report + brief"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b cut"
+          },
+          "c": []
+         },
+         {
+          "t": "span",
+          "a": {
+           "class": "lbl"
+          },
+          "c": [
+           "report + brief",
+           {
+            "t": "br",
+            "a": {},
+            "c": []
+           },
+           "→"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "inst mb",
+         "flex": "6.9 1 0px"
+        },
+        "c": [
+         {
+          "t": "div",
+          "a": {
+           "class": "b rev mb",
+           "title": "Review of the handed-over report or summary, first task of this instance",
+           "flex": "1.6 1 0px"
+          },
+          "c": [
+           "Rv"
+          ]
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b snap mb",
+           "title": "Post-review brief, recorded by a side call before work resumes",
+           "flex": "0.3 1 0px"
+          },
+          "c": []
+         },
+         {
+          "t": "div",
+          "a": {
+           "class": "b work mb",
+           "title": "Session 8: 5 turn pairs",
+           "flex": "5 1 0px"
+          },
+          "c": [
+           "5 t"
+          ]
+         }
+        ]
+       },
+       {
+        "t": "div",
+        "a": {
+         "class": "b score",
+         "title": "Final brief scored by the calibrated judge"
+        },
+        "c": [
+         "score"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "div",
+      "a": {
+       "class": "meta"
+      },
+      "c": [
+       "8 sessions",
+       {
+        "t": "br",
+        "a": {},
+        "c": []
+       },
+       "8 instances"
+      ]
+     }
+    ]
+   }
+  ],
+  "pressed": [
+   "len-5"
+  ],
+  "selectedCells": [],
+  "selectedLanes": [],
+  "budget": "40"
+ }
+}

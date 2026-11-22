@@ -1,0 +1,2 @@
+parity: 376 items; on route 376, on /full/ 376; A2 18/18; A3 4/4; A4 stray 0; A5 2/2; unapproved differences: 0
+self-test: 376/376

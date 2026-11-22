@@ -1,0 +1,38 @@
+<section class="panel" id="grid">
+      <h2>Factorial grid: session length × handoff mechanism</h2>
+      <div class="gridwrap">
+        <div class="grid" role="group" aria-label="Session length by handoff mechanism">
+          <div class="axis corner">turn pairs per session →</div>
+          <div class="axis" id="col-2">2</div><div class="axis" id="col-5">5</div><div class="axis" id="col-10">10</div><div class="axis" id="col-20">20</div>
+
+          <div class="rowlab" id="row-C0"><b>C0</b><span>Continuous</span></div>
+          <button type="button" id="g-C0" class="cell core span4" data-c="C0" aria-labelledby="row-C0 g-C0">one unbroken session of 40 turn pairs · no length factor</button>
+
+          <div class="rowlab" id="row-C0R"><b>C0+R</b><span>Continuous + review</span></div>
+          <button type="button" id="g-C0R" class="cell core span4" data-c="C0R" aria-labelledby="row-C0R g-C0R">reference · one session of 40 turn pairs, review after turns 10, 20, 30</button>
+
+          <div class="rowlab" id="row-C1"><b>C1</b><span>Self-summary</span></div>
+          <button type="button" id="g-C1-2" class="cell core" data-c="C1" data-n="2" aria-labelledby="row-C1 col-2 g-C1-2">core</button><button type="button" id="g-C1-5" class="cell ext" data-c="C1" data-n="5" aria-labelledby="row-C1 col-5 g-C1-5">ext.</button><button type="button" id="g-C1-10" class="cell core" data-c="C1" data-n="10" aria-labelledby="row-C1 col-10 g-C1-10">core</button><button type="button" id="g-C1-20" class="cell ext" data-c="C1" data-n="20" aria-labelledby="row-C1 col-20 g-C1-20">ext.</button>
+
+          <div class="rowlab" id="row-C1R"><b>C1+R</b><span>Self-summary + review</span></div>
+          <button type="button" id="g-C1R-2" class="cell core" data-c="C1R" data-n="2" aria-labelledby="row-C1R col-2 g-C1R-2">core</button><button type="button" id="g-C1R-5" class="cell ext" data-c="C1R" data-n="5" aria-labelledby="row-C1R col-5 g-C1R-5">ext.</button><button type="button" id="g-C1R-10" class="cell core" data-c="C1R" data-n="10" aria-labelledby="row-C1R col-10 g-C1R-10">core</button><button type="button" id="g-C1R-20" class="cell ext" data-c="C1R" data-n="20" aria-labelledby="row-C1R col-20 g-C1R-20">ext.</button>
+
+          <div class="rowlab" id="row-C2"><b>C2</b><span>Fresh review</span></div>
+          <button type="button" id="g-C2-2" class="cell core" data-c="C2" data-n="2" aria-labelledby="row-C2 col-2 g-C2-2">core</button><button type="button" id="g-C2-5" class="cell ext" data-c="C2" data-n="5" aria-labelledby="row-C2 col-5 g-C2-5">ext.</button><button type="button" id="g-C2-10" class="cell core" data-c="C2" data-n="10" aria-labelledby="row-C2 col-10 g-C2-10">core</button><button type="button" id="g-C2-20" class="cell ext" data-c="C2" data-n="20" aria-labelledby="row-C2 col-20 g-C2-20">ext.</button>
+
+          <div class="rowlab" id="row-C2X"><b>C2−R</b><span>Report, no review</span></div>
+          <button type="button" id="g-C2X-2" class="cell ext" data-c="C2X" data-n="2" aria-labelledby="row-C2X col-2 g-C2X-2">opt.</button><button type="button" id="g-C2X-5" class="cell ext" data-c="C2X" data-n="5" aria-labelledby="row-C2X col-5 g-C2X-5">opt.</button><button type="button" id="g-C2X-10" class="cell ext" data-c="C2X" data-n="10" aria-labelledby="row-C2X col-10 g-C2X-10">opt.</button><button type="button" id="g-C2X-20" class="cell ext" data-c="C2X" data-n="20" aria-labelledby="row-C2X col-20 g-C2X-20">opt.</button>
+
+          <div class="rowlab" id="row-C3"><b>C3</b><span>Independent report</span></div>
+          <button type="button" id="g-C3-2" class="cell ext" data-c="C3" data-n="2" aria-labelledby="row-C3 col-2 g-C3-2">ext.</button><button type="button" id="g-C3-5" class="cell ext" data-c="C3" data-n="5" aria-labelledby="row-C3 col-5 g-C3-5">ext.</button><button type="button" id="g-C3-10" class="cell ext" data-c="C3" data-n="10" aria-labelledby="row-C3 col-10 g-C3-10">ext.</button><button type="button" id="g-C3-20" class="cell ext" data-c="C3" data-n="20" aria-labelledby="row-C3 col-20 g-C3-20">ext.</button>
+
+          <div class="rowlab" id="row-C4"><b>C4</b><span>Cross-model</span></div>
+          <button type="button" id="g-C4-2" class="cell core" data-c="C4" data-n="2" aria-labelledby="row-C4 col-2 g-C4-2">core</button><button type="button" id="g-C4-5" class="cell ext" data-c="C4" data-n="5" aria-labelledby="row-C4 col-5 g-C4-5">ext.</button><button type="button" id="g-C4-10" class="cell core" data-c="C4" data-n="10" aria-labelledby="row-C4 col-10 g-C4-10">core</button><button type="button" id="g-C4-20" class="cell ext" data-c="C4" data-n="20" aria-labelledby="row-C4 col-20 g-C4-20">ext.</button>
+        </div>
+      </div>
+      <p class="hint">Click a cell to see how that run unfolds below.</p>
+      <div class="legend">
+        <span><i class="k1"></i>AISC core, 3 months: <span class="count">4 × 2 + 2 = 10 cells</span>, incl. references C0+R and C1+R</span>
+        <span><i class="k2"></i>Extension: <span class="count">full grid 6 × 4 + 2 = 26 cells</span>, incl. optional C2−R</span>
+      </div>
+    </section>

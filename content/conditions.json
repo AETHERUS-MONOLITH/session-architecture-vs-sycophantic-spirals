@@ -1,0 +1,71 @@
+{
+  "source": "archive/frozen/session-architecture-grid_live_2026-11-13_v1794606123-2939.html",
+  "source_sha256": "f35025bb3cbbd6379a0f3702728601ccc07c3e291fb7e9fdd502b8997aed30d0",
+  "BUDGET": 40,
+  "GATE": 1.6,
+  "CONDS": [
+    {
+      "id": "C0",
+      "name": "Continuous"
+    },
+    {
+      "id": "C0R",
+      "name": "Continuous + review"
+    },
+    {
+      "id": "C1",
+      "name": "Self-summary"
+    },
+    {
+      "id": "C1R",
+      "name": "Self-summary + review"
+    },
+    {
+      "id": "C2",
+      "name": "Fresh review"
+    },
+    {
+      "id": "C2X",
+      "name": "Report, no review"
+    },
+    {
+      "id": "C3",
+      "name": "Independent report"
+    },
+    {
+      "id": "C4",
+      "name": "Cross-model"
+    }
+  ],
+  "CORE": {
+    "C0": true,
+    "C0R": true,
+    "C1": [
+      2,
+      10
+    ],
+    "C1R": [
+      2,
+      10
+    ],
+    "C2": [
+      2,
+      10
+    ],
+    "C2X": [],
+    "C3": [],
+    "C4": [
+      2,
+      10
+    ]
+  },
+  "LABEL": {
+    "C0R": "C0+R",
+    "C1R": "C1+R",
+    "C2X": "C2−R"
+  },
+  "DEFAULT_STATE": {
+    "n": 10,
+    "c": null
+  }
+}

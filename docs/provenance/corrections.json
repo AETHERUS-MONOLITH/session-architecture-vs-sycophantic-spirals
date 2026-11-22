@@ -1,0 +1,26 @@
+{
+ "note": "Register of authorised corrections after Gate 1. Each entry pins the files that carry the correction. Checked by tools/check-source.mjs section 3b. The Gate 1 files themselves are never edited.",
+ "corrections": [
+  {
+   "id": "C-01",
+   "date": "2026-11-21",
+   "found": "2026-11-13 (Gate 2), confirmed 2026-11-14 (Gate 3)",
+   "basis": "Gate 3 review by Claude (orchestrator), 14 Nov 2026",
+   "title": "Inventory gap F01: footer reference paragraph outside every section",
+   "addendum_items": [
+    "F01"
+   ],
+   "source_selector": "div.wrap > p.foot",
+   "files": [
+    {
+     "path": "docs/provenance/CORRECTIONS.md",
+     "sha256": "cc9de839c5fc82699dbfe1fa11fdfda8943b4a53787d7a8a136a3b6abf5efdd6"
+    },
+    {
+     "path": "content/inventory-addendum.json",
+     "sha256": "15d647ab3be54d698e8380d637c0f35a0ba12a241b4a6ac26d2e9c1d4ac09a92"
+    }
+   ]
+  }
+ ]
+}

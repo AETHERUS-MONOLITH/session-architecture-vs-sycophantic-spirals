@@ -1,0 +1,3718 @@
+{
+ "generated": "2026-11-13T23:31:53.616Z",
+ "base": "/session-architecture-vs-sycophantic-spirals/",
+ "items": 376,
+ "inventory_items": 375,
+ "addendum_items": 1,
+ "approved_diffs": [
+  "AD-01"
+ ],
+ "checks": {
+  "self_test": {
+   "description": "matcher run on the frozen source",
+   "items": 376,
+   "missing": 0,
+   "details": []
+  },
+  "A1": {
+   "description": "each item found with identical normalised text (sha16) on its mapped route and on /full/, inside its mapped anchor; ids, data attributes and link targets checked",
+   "items": 376,
+   "on_route": 376,
+   "on_full": 376
+  },
+  "A2": {
+   "description": "data rows per table equal the source, plus one header row",
+   "tables": [
+    {
+     "table": "S05-T01",
+     "route": "/decisions/",
+     "data_rows": 54,
+     "header_rows": 1,
+     "expected": 54,
+     "ok": true
+    },
+    {
+     "table": "S05-T01",
+     "route": "/full/",
+     "data_rows": 54,
+     "header_rows": 1,
+     "expected": 54,
+     "ok": true
+    },
+    {
+     "table": "S06-T01",
+     "route": "/stopping-rule/",
+     "data_rows": 7,
+     "header_rows": 1,
+     "expected": 7,
+     "ok": true
+    },
+    {
+     "table": "S06-T01",
+     "route": "/full/",
+     "data_rows": 7,
+     "header_rows": 1,
+     "expected": 7,
+     "ok": true
+    },
+    {
+     "table": "S06-T02",
+     "route": "/stopping-rule/",
+     "data_rows": 3,
+     "header_rows": 1,
+     "expected": 3,
+     "ok": true
+    },
+    {
+     "table": "S06-T02",
+     "route": "/full/",
+     "data_rows": 3,
+     "header_rows": 1,
+     "expected": 3,
+     "ok": true
+    },
+    {
+     "table": "S08-T01",
+     "route": "/costs/",
+     "data_rows": 4,
+     "header_rows": 1,
+     "expected": 4,
+     "ok": true
+    },
+    {
+     "table": "S08-T01",
+     "route": "/full/",
+     "data_rows": 4,
+     "header_rows": 1,
+     "expected": 4,
+     "ok": true
+    },
+    {
+     "table": "S08-T02",
+     "route": "/costs/",
+     "data_rows": 6,
+     "header_rows": 1,
+     "expected": 6,
+     "ok": true
+    },
+    {
+     "table": "S08-T02",
+     "route": "/full/",
+     "data_rows": 6,
+     "header_rows": 1,
+     "expected": 6,
+     "ok": true
+    },
+    {
+     "table": "S09-T01",
+     "route": "/decisions/",
+     "data_rows": 5,
+     "header_rows": 1,
+     "expected": 5,
+     "ok": true
+    },
+    {
+     "table": "S09-T01",
+     "route": "/full/",
+     "data_rows": 5,
+     "header_rows": 1,
+     "expected": 5,
+     "ok": true
+    },
+    {
+     "table": "S10-T01",
+     "route": "/operations/",
+     "data_rows": 14,
+     "header_rows": 1,
+     "expected": 14,
+     "ok": true
+    },
+    {
+     "table": "S10-T01",
+     "route": "/full/",
+     "data_rows": 14,
+     "header_rows": 1,
+     "expected": 14,
+     "ok": true
+    },
+    {
+     "table": "S11-T01",
+     "route": "/operations/",
+     "data_rows": 8,
+     "header_rows": 1,
+     "expected": 8,
+     "ok": true
+    },
+    {
+     "table": "S11-T01",
+     "route": "/full/",
+     "data_rows": 8,
+     "header_rows": 1,
+     "expected": 8,
+     "ok": true
+    },
+    {
+     "table": "S12-T01",
+     "route": "/operations/",
+     "data_rows": 5,
+     "header_rows": 1,
+     "expected": 5,
+     "ok": true
+    },
+    {
+     "table": "S12-T01",
+     "route": "/full/",
+     "data_rows": 5,
+     "header_rows": 1,
+     "expected": 5,
+     "ok": true
+    }
+   ]
+  },
+  "A3": {
+   "description": "status-label multisets of S05-T01 and S06-T01 equal SOURCE_INVENTORY section 2",
+   "results": [
+    {
+     "table": "S05-T01",
+     "route": "/decisions/",
+     "ok": true,
+     "labels": {
+      "in proposal": 2,
+      "derived": 19,
+      "interpretation note": 1,
+      "setup phase": 2,
+      "decided 30 Oct": 1,
+      "named limit": 1,
+      "decided 3 Nov": 4,
+      "optional, decided 3 Nov": 1,
+      "open": 1,
+      "decided 2 Nov": 3,
+      "in proposal; decided 2 Nov": 1,
+      "proposal": 1,
+      "working value": 2,
+      "planning value, decided 3 Nov": 1,
+      "decided 2 Nov; runs kept 12 Nov": 1,
+      "decided 12 Nov": 9,
+      "before main analysis": 1,
+      "decided 12 Nov (evening)": 2,
+      "decided 13 Nov": 1
+     }
+    },
+    {
+     "table": "S05-T01",
+     "route": "/full/",
+     "ok": true,
+     "labels": {
+      "in proposal": 2,
+      "derived": 19,
+      "interpretation note": 1,
+      "setup phase": 2,
+      "decided 30 Oct": 1,
+      "named limit": 1,
+      "decided 3 Nov": 4,
+      "optional, decided 3 Nov": 1,
+      "open": 1,
+      "decided 2 Nov": 3,
+      "in proposal; decided 2 Nov": 1,
+      "proposal": 1,
+      "working value": 2,
+      "planning value, decided 3 Nov": 1,
+      "decided 2 Nov; runs kept 12 Nov": 1,
+      "decided 12 Nov": 9,
+      "before main analysis": 1,
+      "decided 12 Nov (evening)": 2,
+      "decided 13 Nov": 1
+     }
+    },
+    {
+     "table": "S06-T01",
+     "route": "/stopping-rule/",
+     "ok": true,
+     "labels": {
+      "decided 12 Nov": 3,
+      "decided 12 Nov, reported alongside": 1,
+      "decided 12 Nov; criteria written before the main analysis": 1,
+      "derived; confirmed in the written operationalisation": 1,
+      "derived": 1
+     }
+    },
+    {
+     "table": "S06-T01",
+     "route": "/full/",
+     "ok": true,
+     "labels": {
+      "decided 12 Nov": 3,
+      "decided 12 Nov, reported alongside": 1,
+      "decided 12 Nov; criteria written before the main analysis": 1,
+      "derived; confirmed in the written operationalisation": 1,
+      "derived": 1
+     }
+    }
+   ]
+  },
+  "A4": {
+   "description": "every text node outside the fragments, every chrome attribute text and the <title> is a chrome.yml string; status banner on every route",
+   "routes": [
+    {
+     "route": "/",
+     "stray": 0
+    },
+    {
+     "route": "/grid/",
+     "stray": 0
+    },
+    {
+     "route": "/hypotheses/",
+     "stray": 0
+    },
+    {
+     "route": "/handoffs/",
+     "stray": 0
+    },
+    {
+     "route": "/scoring/",
+     "stray": 0
+    },
+    {
+     "route": "/stopping-rule/",
+     "stray": 0
+    },
+    {
+     "route": "/costs/",
+     "stray": 0
+    },
+    {
+     "route": "/decisions/",
+     "stray": 0
+    },
+    {
+     "route": "/operations/",
+     "stray": 0
+    },
+    {
+     "route": "/changelog/",
+     "stray": 0
+    },
+    {
+     "route": "/full/",
+     "stray": 0
+    }
+   ]
+  },
+  "A5": {
+   "description": "change log: 13 entries in source order",
+   "results": [
+    {
+     "route": "/changelog/",
+     "entries": 13,
+     "in_source_order": true
+    },
+    {
+     "route": "/full/",
+     "entries": 13,
+     "in_source_order": true
+    }
+   ]
+  },
+  "A6": {
+   "description": "unapproved differences (target 0); approved differences listed in content/approved-diffs.json",
+   "unapproved": 0,
+   "approved": [
+    {
+     "id": "AD-01",
+     "title": "C3 post-review snapshot drawn in the run timeline",
+     "scope": "timeline drawing only (dynamic #lanes container S03-D01); no inventory text item changes",
+     "text_changes": 0
+    }
+   ]
+  }
+ },
+ "differences": [],
+ "item_results": [
+  {
+   "id": "S00",
+   "kind": "header",
+   "route": "/",
+   "anchor": "top",
+   "full_anchor": "top",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S00-E01",
+   "kind": "div",
+   "route": "/",
+   "anchor": "top",
+   "full_anchor": "top",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S00-E02",
+   "kind": "h1",
+   "route": "/",
+   "anchor": "top",
+   "full_anchor": "top",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S00-E03",
+   "kind": "p",
+   "route": "/",
+   "anchor": "top",
+   "full_anchor": "top",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S00-E04",
+   "kind": "p",
+   "route": "/",
+   "anchor": "top",
+   "full_anchor": "top",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S00-E05",
+   "kind": "a",
+   "route": "/",
+   "anchor": "top",
+   "full_anchor": "top",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01",
+   "kind": "section",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-H01",
+   "kind": "heading",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X01",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X02",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X03",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X04",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X05",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X06",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X07",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B01",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X08",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X09",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B02",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X10",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X11",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B03",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B04",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B05",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B06",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X12",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X13",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B07",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B08",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B09",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B10",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X14",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X15",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B11",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B12",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B13",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B14",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X16",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X17",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B15",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B16",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B17",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B18",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X18",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X19",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B19",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B20",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B21",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B22",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X20",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X21",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B23",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B24",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B25",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-B26",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-P01",
+   "kind": "paragraph",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X22",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S01-X23",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "grid",
+   "full_anchor": "grid",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S02",
+   "kind": "section",
+   "route": "/grid/",
+   "anchor": "conditions",
+   "full_anchor": "conditions",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S02-H01",
+   "kind": "heading",
+   "route": "/grid/",
+   "anchor": "conditions",
+   "full_anchor": "conditions",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S02-L01-I01",
+   "kind": "list-item",
+   "route": "/grid/",
+   "anchor": "conditions",
+   "full_anchor": "conditions",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S02-L01-I02",
+   "kind": "list-item",
+   "route": "/grid/",
+   "anchor": "conditions",
+   "full_anchor": "conditions",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S02-L01-I03",
+   "kind": "list-item",
+   "route": "/grid/",
+   "anchor": "conditions",
+   "full_anchor": "conditions",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S02-L01-I04",
+   "kind": "list-item",
+   "route": "/grid/",
+   "anchor": "conditions",
+   "full_anchor": "conditions",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S02-L01-I05",
+   "kind": "list-item",
+   "route": "/grid/",
+   "anchor": "conditions",
+   "full_anchor": "conditions",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S02-L01-I06",
+   "kind": "list-item",
+   "route": "/grid/",
+   "anchor": "conditions",
+   "full_anchor": "conditions",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S02-L01-I07",
+   "kind": "list-item",
+   "route": "/grid/",
+   "anchor": "conditions",
+   "full_anchor": "conditions",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S02-L01-I08",
+   "kind": "list-item",
+   "route": "/grid/",
+   "anchor": "conditions",
+   "full_anchor": "conditions",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03",
+   "kind": "section",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-H01",
+   "kind": "heading",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-B01",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-B02",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-B03",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-B04",
+   "kind": "control",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-X01",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-X02",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-X03",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-X04",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-X05",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-X06",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-X07",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-X08",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-X09",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-X10",
+   "kind": "text-block",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-D01",
+   "kind": "dynamic-container",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S03-P01",
+   "kind": "paragraph",
+   "route": "/grid/",
+   "anchor": "runs",
+   "full_anchor": "runs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04",
+   "kind": "section",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-H01",
+   "kind": "heading",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-P01",
+   "kind": "paragraph",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-L01-I01",
+   "kind": "list-item",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-L01-I02",
+   "kind": "list-item",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-L01-I03",
+   "kind": "list-item",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-L01-I04",
+   "kind": "list-item",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-L01-I05",
+   "kind": "list-item",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-L01-I06",
+   "kind": "list-item",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-L01-I07",
+   "kind": "list-item",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-L01-I08",
+   "kind": "list-item",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-L01-I09",
+   "kind": "list-item",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S04-L01-I10",
+   "kind": "list-item",
+   "route": "/hypotheses/",
+   "anchor": "hypotheses",
+   "full_anchor": "hypotheses",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05",
+   "kind": "section",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-H01",
+   "kind": "heading",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X01",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X02",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-P01",
+   "kind": "paragraph",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X03",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X04",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X05",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X06",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X07",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X08",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X09",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-P02",
+   "kind": "paragraph",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X10",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X11",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X12",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X13",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X14",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X15",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-P03",
+   "kind": "paragraph",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X16",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X17",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X18",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X19",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X20",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X21",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X22",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-P04",
+   "kind": "paragraph",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X23",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X24",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X25",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X26",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X27",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X28",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-P05",
+   "kind": "paragraph",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-A01",
+   "kind": "link",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X29",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X30",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X31",
+   "kind": "text-block",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-L01-I01",
+   "kind": "list-item",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-L01-I02",
+   "kind": "list-item",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-L01-I03",
+   "kind": "list-item",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-L01-I04",
+   "kind": "list-item",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-L01-I05",
+   "kind": "list-item",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-D01",
+   "kind": "anchor-container",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-X32",
+   "kind": "text-block",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-P06",
+   "kind": "paragraph",
+   "route": "/handoffs/",
+   "anchor": "handoff",
+   "full_anchor": "handoff",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R00",
+   "kind": "table-header",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R01",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R02",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R03",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R04",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R05",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R06",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R07",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R08",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R09",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R10",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R11",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R12",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R13",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R14",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R15",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R16",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R17",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R18",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R19",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R20",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R21",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R22",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R23",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R24",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R25",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R26",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R27",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R28",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R29",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R30",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R31",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R32",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R33",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R34",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R35",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R36",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R37",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R38",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R39",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R40",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R41",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R42",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R43",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R44",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R45",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R46",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R47",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R48",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R49",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R50",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R51",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R52",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R53",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-T01-R54",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-A02",
+   "kind": "link",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-A03",
+   "kind": "link",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-A04",
+   "kind": "link",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S05-A05",
+   "kind": "link",
+   "route": "/decisions/",
+   "anchor": "status",
+   "full_anchor": "status",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06",
+   "kind": "section",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-H01",
+   "kind": "heading",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-P01",
+   "kind": "paragraph",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T01-R00",
+   "kind": "table-header",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T01-R01",
+   "kind": "table-row",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T01-R02",
+   "kind": "table-row",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T01-R03",
+   "kind": "table-row",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T01-R04",
+   "kind": "table-row",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T01-R05",
+   "kind": "table-row",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T01-R06",
+   "kind": "table-row",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T01-R07",
+   "kind": "table-row",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-H02",
+   "kind": "heading",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T02-R00",
+   "kind": "table-header",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T02-R01",
+   "kind": "table-row",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T02-R02",
+   "kind": "table-row",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-T02-R03",
+   "kind": "table-row",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-P02",
+   "kind": "paragraph",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-H03",
+   "kind": "heading",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L01-I01",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L01-I02",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L01-I03",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L01-I04",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L01-I05",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L01-I06",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L01-I07",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-H04",
+   "kind": "heading",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X01",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X02",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X03",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X04",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X05",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X06",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X07",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X08",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X09",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X10",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X11",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X12",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X13",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X14",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X15",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X16",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X17",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X18",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X19",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X20",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X21",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X22",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X23",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X24",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-X25",
+   "kind": "text-block",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-P03",
+   "kind": "paragraph",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L02-I01",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L02-I02",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L02-I03",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L02-I04",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-H05",
+   "kind": "heading",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-P04",
+   "kind": "paragraph",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-H06",
+   "kind": "heading",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L03-I01",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L03-I02",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L03-I03",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S06-L03-I04",
+   "kind": "list-item",
+   "route": "/stopping-rule/",
+   "anchor": "stopping-rule",
+   "full_anchor": "stopping-rule",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S07",
+   "kind": "section",
+   "route": "/scoring/",
+   "anchor": "scoring",
+   "full_anchor": "scoring",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S07-H01",
+   "kind": "heading",
+   "route": "/scoring/",
+   "anchor": "scoring",
+   "full_anchor": "scoring",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S07-L01-I01",
+   "kind": "list-item",
+   "route": "/scoring/",
+   "anchor": "scoring",
+   "full_anchor": "scoring",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S07-L01-I02",
+   "kind": "list-item",
+   "route": "/scoring/",
+   "anchor": "scoring",
+   "full_anchor": "scoring",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S07-L01-I03",
+   "kind": "list-item",
+   "route": "/scoring/",
+   "anchor": "scoring",
+   "full_anchor": "scoring",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S07-L01-I04",
+   "kind": "list-item",
+   "route": "/scoring/",
+   "anchor": "scoring",
+   "full_anchor": "scoring",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S07-L01-I05",
+   "kind": "list-item",
+   "route": "/scoring/",
+   "anchor": "scoring",
+   "full_anchor": "scoring",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S07-L01-I06",
+   "kind": "list-item",
+   "route": "/scoring/",
+   "anchor": "scoring",
+   "full_anchor": "scoring",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S07-L01-I07",
+   "kind": "list-item",
+   "route": "/scoring/",
+   "anchor": "scoring",
+   "full_anchor": "scoring",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S07-L01-I08",
+   "kind": "list-item",
+   "route": "/scoring/",
+   "anchor": "scoring",
+   "full_anchor": "scoring",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08",
+   "kind": "section",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-H01",
+   "kind": "heading",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-P01",
+   "kind": "paragraph",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T01-R00",
+   "kind": "table-header",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T01-R01",
+   "kind": "table-row",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T01-R02",
+   "kind": "table-row",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T01-R03",
+   "kind": "table-row",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T01-R04",
+   "kind": "table-row",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T02-R00",
+   "kind": "table-header",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T02-R01",
+   "kind": "table-row",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T02-R02",
+   "kind": "table-row",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T02-R03",
+   "kind": "table-row",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T02-R04",
+   "kind": "table-row",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T02-R05",
+   "kind": "table-row",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-T02-R06",
+   "kind": "table-row",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-L01-I01",
+   "kind": "list-item",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-L01-I02",
+   "kind": "list-item",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-L01-I03",
+   "kind": "list-item",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-L01-I04",
+   "kind": "list-item",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S08-L01-I05",
+   "kind": "list-item",
+   "route": "/costs/",
+   "anchor": "costs",
+   "full_anchor": "costs",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S09",
+   "kind": "section",
+   "route": "/decisions/",
+   "anchor": "open",
+   "full_anchor": "open",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S09-H01",
+   "kind": "heading",
+   "route": "/decisions/",
+   "anchor": "open",
+   "full_anchor": "open",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S09-T01-R00",
+   "kind": "table-header",
+   "route": "/decisions/",
+   "anchor": "open",
+   "full_anchor": "open",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S09-T01-R01",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "open",
+   "full_anchor": "open",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S09-T01-R02",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "open",
+   "full_anchor": "open",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S09-T01-R03",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "open",
+   "full_anchor": "open",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S09-T01-R04",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "open",
+   "full_anchor": "open",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S09-T01-R05",
+   "kind": "table-row",
+   "route": "/decisions/",
+   "anchor": "open",
+   "full_anchor": "open",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10",
+   "kind": "section",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-H01",
+   "kind": "heading",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R00",
+   "kind": "table-header",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R01",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R02",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R03",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R04",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R05",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R06",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R07",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R08",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R09",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R10",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R11",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R12",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R13",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S10-T01-R14",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "artifacts",
+   "full_anchor": "artifacts",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11",
+   "kind": "section",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-H01",
+   "kind": "heading",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-P01",
+   "kind": "paragraph",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-T01-R00",
+   "kind": "table-header",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-T01-R01",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-T01-R02",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-T01-R03",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-T01-R04",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-T01-R05",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-T01-R06",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-T01-R07",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S11-T01-R08",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "instance-state",
+   "full_anchor": "instance-state",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S12",
+   "kind": "section",
+   "route": "/operations/",
+   "anchor": "error-path",
+   "full_anchor": "error-path",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S12-H01",
+   "kind": "heading",
+   "route": "/operations/",
+   "anchor": "error-path",
+   "full_anchor": "error-path",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S12-P01",
+   "kind": "paragraph",
+   "route": "/operations/",
+   "anchor": "error-path",
+   "full_anchor": "error-path",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S12-T01-R00",
+   "kind": "table-header",
+   "route": "/operations/",
+   "anchor": "error-path",
+   "full_anchor": "error-path",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S12-T01-R01",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "error-path",
+   "full_anchor": "error-path",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S12-T01-R02",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "error-path",
+   "full_anchor": "error-path",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S12-T01-R03",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "error-path",
+   "full_anchor": "error-path",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S12-T01-R04",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "error-path",
+   "full_anchor": "error-path",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S12-T01-R05",
+   "kind": "table-row",
+   "route": "/operations/",
+   "anchor": "error-path",
+   "full_anchor": "error-path",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13",
+   "kind": "section",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-H01",
+   "kind": "heading",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I01",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I02",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I03",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I04",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I05",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I06",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I07",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I08",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I09",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I10",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I11",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I12",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S13-L01-I13",
+   "kind": "list-item",
+   "route": "/changelog/",
+   "anchor": "changes",
+   "full_anchor": "changes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14",
+   "kind": "section",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-H01",
+   "kind": "heading",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L01-I01",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L01-I02",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L01-I03",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L01-I04",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L01-I05",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-H02",
+   "kind": "heading",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L02-I01",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L02-I02",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L02-I03",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L02-I04",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L02-I05",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L02-I06",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-L02-I07",
+   "kind": "list-item",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "S14-A01",
+   "kind": "link",
+   "route": "/",
+   "anchor": "tasks-outcomes",
+   "full_anchor": "tasks-outcomes",
+   "on_route": true,
+   "on_full": true
+  },
+  {
+   "id": "F01",
+   "kind": "paragraph",
+   "route": "/",
+   "anchor": "reference-model",
+   "full_anchor": "reference-model",
+   "on_route": true,
+   "on_full": true
+  }
+ ],
+ "unapproved_differences": 0
+}
