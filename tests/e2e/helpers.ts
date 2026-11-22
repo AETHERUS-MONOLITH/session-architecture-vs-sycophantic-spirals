@@ -12,10 +12,14 @@ export function watch(page: Page) {
   const problems: string[] = [];
   page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') problems.push(`console.${m.type()}: ${m.text()}`); });
   page.on('pageerror', (e) => problems.push(`pageerror: ${e.message}`));
+  // The site under test is the local preview or, in the post-deploy smoke job, E2E_EXTERNAL_URL.
+  // page.url() is still about:blank when the first navigation request fires, so the host under
+  // test is taken from the configuration rather than from the page.
+  const tested = process.env.E2E_EXTERNAL_URL ? new URL(process.env.E2E_EXTERNAL_URL).host : null;
   page.on('request', (r) => {
     const u = new URL(r.url());
     const own = new URL(page.url() || 'http://127.0.0.1');
-    if (u.protocol.startsWith('http') && u.host !== own.host && !['127.0.0.1', 'localhost'].includes(u.hostname)) problems.push(`external request: ${r.url()}`);
+    if (u.protocol.startsWith('http') && u.host !== own.host && u.host !== tested && !['127.0.0.1', 'localhost'].includes(u.hostname)) problems.push(`external request: ${r.url()}`);
   });
   page.on('requestfailed', (r) => problems.push(`request failed: ${r.url()} ${r.failure()?.errorText}`));
   page.on('response', (r) => { if (r.status() >= 400) problems.push(`HTTP ${r.status()}: ${r.url()}`); });
