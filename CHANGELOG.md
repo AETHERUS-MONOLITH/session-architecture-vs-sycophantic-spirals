@@ -2,6 +2,11 @@
 
 Website implementation history. The methodological history of the research design is the grid's own change log, reproduced verbatim on `/changelog/#changes`; it is not repeated or extended here. See `docs/provenance/VERSION_LOG.md` for how the two histories relate.
 
+## First deployment (22 Nov 2026; site content unchanged, site version stays 0.1.0)
+
+- Gate 4 approved on 22 Nov. Deploy run 45063318013 published commit cb00dad; build, deploy and the route and L1–L4 smoke check passed.
+- Post-deploy Playwright smoke (D1, D2, C1, C8) failed 37 of 43 tests with one cause: `watch()` in `tests/e2e/helpers.ts` read the host under test from `page.url()`, which is still `about:blank` when the first navigation request fires. Locally the preview host 127.0.0.1 is exempt, so the defect only showed against the public URL. The host under test now comes from `E2E_EXTERNAL_URL`. Requests to any other host are still reported.
+
 ## Repository changes after the Gate 3 review (21 Nov 2026; site content unchanged, site version stays 0.1.0)
 
 - Provenance: the inventory correction for F01 is now correction C-01 in `docs/provenance/CORRECTIONS.md`, registered with hashes in `docs/provenance/corrections.json`. `docs/provenance/SOURCE_INVENTORY.md` is restored byte for byte to its Gate 1 state. Commit 29d60ba had written the note into that frozen file, and the source-integrity check failed on it (CI run 43530230142).
